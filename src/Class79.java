@@ -14,7 +14,7 @@ public class Class79 {
 	static void method1034(ScriptInvocation var0, int var1, byte var2) {
 		Object[] var3 = var0.parameters;
 		int var4 = ((Integer) var3[0]).intValue();
-		System.out.printf("Invoking script %d param array %s%n", var4, Arrays.toString(var3));
+		//System.out.printf("Invoking script %d param array %s%n", var4, Arrays.toString(var3));
 		CacheableEntry_Sub23_Sub17 var5 = Class117.method1482(var4, 433742564);
 		if (var5 != null) {
 			int istackptr = 0;

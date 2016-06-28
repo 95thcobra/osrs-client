@@ -24,6 +24,7 @@ public class Loader implements AppletStub {
 	public static final int WORLD = 1;
 	public static final int REV = 86;
 	public static final boolean local = true;
+	public static final String SERVER_NAME = "Edgeville TEST CLIENT";
 
 	/**
 	 * No need to configure anything lower
@@ -56,7 +57,7 @@ public class Loader implements AppletStub {
 			c.init();
 			c.start();
 
-			JFrame clientFrame = new JFrame("Prodigy-X OldSchool | DEV CLIENT");
+			JFrame clientFrame = new JFrame(SERVER_NAME);
 			clientFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			clientFrame.add(c);
 			clientFrame.setVisible(true);

@@ -50,7 +50,7 @@ param=13=true
 param=1=.runescape.com
 param=14=http://www.runescape.com/a=946/g=oldscape/slr.ws?order=LPWM
 param=2=true
-param=10=318
+param=10=1
 param=4=5
 param=12=0
 param=3=946

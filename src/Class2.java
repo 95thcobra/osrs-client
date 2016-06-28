@@ -429,7 +429,7 @@ public class Class2 {
 		}
 	}
 
-	static final void method101(boolean instance) {
+	static final void method101(boolean instance) {// mapregion
 		GameClient.aBool2960 = instance;
 		int var2;
 		int var3;

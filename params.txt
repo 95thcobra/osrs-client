@@ -51,7 +51,7 @@ msg=new_version_link=http://oldschool.runescape.com/
 1=.runescape.com
 11=5J3UelWRNaeN6D3mDdihco3oPeYN2KFy2DCquj7JMmEU53n9PH4H6w
 15=0
-10=318
+10=310
 14=http://www.runescape.com/a=946/g=oldscape/slr.ws?order=LPWM
 4=5
 13=true

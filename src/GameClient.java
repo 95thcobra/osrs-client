@@ -514,7 +514,8 @@ public final class GameClient extends Applet_Sub1 {
 					}
 
 					if (var38 == null) {
-						var38 = Class83.aString993 + File.separatorChar + "jagexcache" + var5 + File.separatorChar + "oldschool" + File.separatorChar + var23 + File.separatorChar;
+						//var38 = Class83.aString993 + File.separatorChar + "jagexcache" + var5 + File.separatorChar + "oldschool" + File.separatorChar + var23 + File.separatorChar;
+						var38 = Class83.aString993 + File.separatorChar + ".Edgeville" + var5 + File.separatorChar + "oldschool" + File.separatorChar + var23 + File.separatorChar;
 						var28 = true;
 					}
 

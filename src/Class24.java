@@ -292,6 +292,7 @@ public class Class24 {
 												}
 											}
 										}
+									// What the hell is this? topkek
 									} else {
 										var28 = new ScriptInvocation();
 										var28.inter = inter;

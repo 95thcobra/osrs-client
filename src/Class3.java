@@ -89,7 +89,7 @@ public class Class3 {
 		GameClient.gameBuffer.startBitMode();
 
 		int numLocalNpcs = GameClient.gameBuffer.readbits(8);
-		System.out.println("Num local: " + numLocalNpcs);
+		// System.out.println("Num local: " + numLocalNpcs);
 		if (numLocalNpcs < GameClient.numLocalNpcs * 1974577941) {
 			for (int i = numLocalNpcs; i < GameClient.numLocalNpcs * 1974577941; i++) {
 				GameClient.npcsPendingRemoval[(GameClient.numNpcsPendingRemoval += 880507307) * -807159549 - 1] = GameClient.npcIndices[i];
@@ -109,7 +109,7 @@ public class Class3 {
 				int npcIndex = GameClient.npcIndices[i];
 				Npc npc = GameClient.sceneNpcs[npcIndex];
 				int needsUpdating = GameClient.gameBuffer.readbits(1);
-				System.out.println("Needs updating: " + needsUpdating);
+				// System.out.println("Needs updating: " + needsUpdating);
 				if (needsUpdating == 0) {
 					GameClient.npcIndices[(GameClient.numLocalNpcs += 1449151549) * 1974577941 - 1] = npcIndex;
 					npc.lastSync = GameClient.cycle * 489897939;
@@ -151,7 +151,7 @@ public class Class3 {
 			while (GameClient.gameBuffer.bitsReadable(GameClient.messageSize * 1964753529) >= 27) {
 				int index = GameClient.gameBuffer.readbits(15);
 				System.out.println("add at index " + index);
-				if (index == 32767) { //-1
+				if (index == 32767) { // -1
 					break;
 				}
 
@@ -228,9 +228,10 @@ public class Class3 {
 				System.out.println("Apparently we want to update " + idx);
 				int syncVal = GameClient.gameBuffer.readUByte();
 
-				if ((syncVal & 1) != 0) {
+				if ((syncVal & 1) != 0) { // first hit npc
 					var6 = GameClient.gameBuffer.readUByteN();
 					var7 = GameClient.gameBuffer.readUByteN();
+					System.out.println("FIRST HIT NPC"+var6 +" " + var7);
 					npc.addHit(var6, var7, GameClient.cycle * 1026470457);
 					npc.anInt2527 = GameClient.cycle * 1810132455 - 2012164012;
 					npc.anInt2528 = GameClient.gameBuffer.readUShortA() * -1158152579;
@@ -250,9 +251,14 @@ public class Class3 {
 					npc.anInt2551 = npc.definition.anInt2238 * 431532407;
 				}
 
-				if ((syncVal & 2) != 0) {
+				if ((syncVal & 2) != 0) { // second hit npc
+			
+					
 					var6 = GameClient.gameBuffer.readUByteS();
 					var7 = GameClient.gameBuffer.readUByteN();
+					
+					System.out.println("SECOND HIT NPC"+var6 +" " + var7);
+					
 					npc.addHit(var6, var7, GameClient.cycle * 1026470457);
 					npc.anInt2527 = GameClient.cycle * 1810132455 - 2012164012;
 					npc.anInt2528 = GameClient.gameBuffer.readULEShort() * -1158152579;
@@ -293,7 +299,7 @@ public class Class3 {
 					}
 				}
 
-				if ((syncVal & 0x40) != 0) { //gfx
+				if ((syncVal & 0x40) != 0) { // gfx
 					npc.anInt2541 = GameClient.gameBuffer.readULEShort() * 1325550547;
 					var6 = GameClient.gameBuffer.readInt();
 					npc.anInt2545 = (var6 >> 16) * 1119651467;
