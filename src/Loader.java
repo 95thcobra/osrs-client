@@ -19,8 +19,9 @@ public class Loader implements AppletStub {
 	/**
 	 * Feel free to figure these as you wish
 	 */
-	public static final String IP = "localhost";
-    public static final int PORT = 43594;
+	// public static final String IP = "localhost";
+	public static final String IP = "77.251.97.234";
+	public static final int PORT = 43594;
 	public static final int WORLD = 1;
 	public static final int REV = 86;
 	public static final boolean local = true;
