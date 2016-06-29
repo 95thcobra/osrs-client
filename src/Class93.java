@@ -10,7 +10,7 @@ public class Class93 {
 		throw new Error();
 	}
 
-	static void method1145(int var0, String var1, String var2) {
+	static void sendMessage(int var0, String var1, String var2) {
 		IsaacCipher.method822(var0, var1, var2, (String) null, 670743811);
 	}
 

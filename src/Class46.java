@@ -52,18 +52,18 @@ public class Class46 {
 		return CacheableEntry_Sub23_Sub7.method2396(var0, var1, var5, var6, (byte) 63);
 	}
 
-	static final void method697(String var0, byte var1) {
-		if (var0.equalsIgnoreCase("toggleroof")) {
+	static final void toggles(String var0, byte var1) {
+		/*if (var0.equalsIgnoreCase("toggleroof")) {
 			Class15.aClass35_195.aBool472 = !Class15.aClass35_195.aBool472;
 			Class74.method1024(-1993468689);
 			if (Class15.aClass35_195.aBool472) {
-				Class93.method1145(99, "", "Roofs are now all hidden");
+				Class93.sendMessage(99, "", "Roofs are now all hidden");
 			} else {
-				Class93.method1145(99, "", "Roofs will only be removed selectively");
+				Class93.sendMessage(99, "", "Roofs will only be removed selectively");
 			}
-		}
+		}*/
 
-		if (var0.equalsIgnoreCase("gfxmodels")) {
+		/*if (var0.equalsIgnoreCase("gfxmodels")) {
 			for (int i=0; i<8000; i++) {
 				System.out.println(i + ": " + Class42.getGfxDef(i).animId * 28936275);
 			}
@@ -83,14 +83,18 @@ public class Class46 {
 		if (var0.equalsIgnoreCase("up")) {
 			Class32.mapSquareHeights[0][Player.me.stepQueueX[0]][Player.me.stepQueueY[0]] -= 20;
 			return;
-		}
-
-		if (var0.equalsIgnoreCase("displayfps")) {
-			GameClient.aBool2991 = !GameClient.aBool2991;
-		}
+		}*/
 
 		if (GameClient.playerRights * -624018989 >= 2) {
-			if (var0.equalsIgnoreCase("fpson")) {
+			if (var0.equalsIgnoreCase("dataon")) {
+				GameClient.aBool2991 = !GameClient.aBool2991;
+				return;
+			}
+			if (var0.equalsIgnoreCase("dataoff")) {
+				GameClient.aBool2991 = !GameClient.aBool2991;
+				return;
+			}
+			/*if (var0.equalsIgnoreCase("fpson")) {
 				GameClient.aBool2991 = true;
 			}
 
@@ -108,7 +112,7 @@ public class Class46 {
 
 			if (var0.equalsIgnoreCase("errortest") && GameClient.anInt2861 * -134799277 == 2) {
 				throw new RuntimeException();
-			}
+			}*/
 		}
 
 		GameClient.secureBuffer.writeOpcode(231);

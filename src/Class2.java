@@ -617,7 +617,7 @@ public class Class2 {
 		}
 
 		if (!var3) {
-			Class93.method1145(4, "", Class90.UNABLE_TO_FIND + var1);
+			Class93.sendMessage(4, "", Class90.UNABLE_TO_FIND + var1);
 		}
 
 	}

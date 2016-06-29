@@ -735,7 +735,7 @@ public final class PacketEncoder {
 				if (var2 == 1005) {
 					var18 = Class50.method713(var1, (byte) -82);
 					if (var18 != null && var18.itemAmounts[var0] >= 100000) {
-						Class93.method1145(27, "", var18.itemAmounts[var0] + " x " + PacketDecoder.getItemDef(var3).name);
+						Class93.sendMessage(27, "", var18.itemAmounts[var0] + " x " + PacketDecoder.getItemDef(var3).name);
 					} else {
 						GameClient.secureBuffer.writeOpcode(156);
 						GameClient.secureBuffer.writeShortA(var3);

@@ -575,7 +575,7 @@ public class PacketDecoder {
 					}
 
 					var54 = CacheableEntry_Sub23_Sub14_Sub4.method3315(Class38.method498(var54, 1634974047));
-					Class93.method1145(6, var2, var54);
+					Class93.sendMessage(6, var2, var54);
 					GameClient.incomingMessage = -426797213;
 					return true;
 				}
@@ -595,7 +595,7 @@ public class PacketDecoder {
 
 					String var81 = GameClient.gameBuffer.readString();
 					if (!var46) {
-						Class93.method1145(type, var48, var81);
+						Class93.sendMessage(type, var48, var81);
 					}
 
 					if (type == 29) { // Npc examine
@@ -1175,9 +1175,9 @@ public class PacketDecoder {
 							player.aString2523 = GameClient.gameBuffer.readString();
 							if (player.aString2523.charAt(0) == '~') {
 								player.aString2523 = player.aString2523.substring(1);
-								Class93.method1145(2, player.aString2835, player.aString2523);
+								Class93.sendMessage(2, player.aString2835, player.aString2523);
 							} else if (Player.me == player) {
-								Class93.method1145(2, player.aString2835, player.aString2523);
+								Class93.sendMessage(2, player.aString2835, player.aString2523);
 							}
 
 							player.aBool2518 = false;
@@ -1262,9 +1262,9 @@ public class PacketDecoder {
 									}
 
 									if (icon.anInt914 * 1684664313 != -1) {
-										Class93.method1145(var98, Class96.method1232(icon.anInt914 * 1684664313, -1088453175) + player.aString2835, var96);
+										Class93.sendMessage(var98, Class96.method1232(icon.anInt914 * 1684664313, -1088453175) + player.aString2835, var96);
 									} else {
-										Class93.method1145(var98, player.aString2835, var96);
+										Class93.sendMessage(var98, player.aString2835, var96);
 									}
 								}
 							}
@@ -1413,6 +1413,7 @@ public class PacketDecoder {
 					return true;
 				}
 
+				// Makes minigame or world orb black, idk.
 				if (GameClient.incomingMessage * -2146869835 == 106) {
 					GameClient.anInt2901 = GameClient.gameBuffer.readUByte() * -713504813;
 					GameClient.incomingMessage = -426797213;
@@ -1621,9 +1622,9 @@ public class PacketDecoder {
 						}
 
 						if (var55.anInt914 * 1684664313 != -1) {
-							Class93.method1145(var90, Class96.method1232(var55.anInt914 * 1684664313, -1238302374) + var2, var19);
+							Class93.sendMessage(var90, Class96.method1232(var55.anInt914 * 1684664313, -1238302374) + var2, var19);
 						} else {
-							Class93.method1145(var90, var2, var19);
+							Class93.sendMessage(var90, var2, var19);
 						}
 					}
 
@@ -1716,6 +1717,7 @@ public class PacketDecoder {
 					return true;
 				}
 
+				// Update Game countdown
 				if (GameClient.incomingMessage * -2146869835 == 135) {
 					GameClient.anInt2877 = GameClient.gameBuffer.readUShort() * 772647426;
 					GameClient.anInt3062 = GameClient.anInt3050 * 108236717;

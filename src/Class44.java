@@ -157,14 +157,14 @@ public class Class44 {
 						Class41 var6 = GameClient.aClass41Array2895[var4];
 						var3 = Class38.method497(var6.aString597, GameClient.aClass119_2919, -1781936336);
 						if (var3 != null && var3.equals(var5)) {
-							Class93.method1145(31, "", var0 + Class90.aString1093);
+							Class93.sendMessage(31, "", var0 + Class90.aString1093);
 							return;
 						}
 
 						if (var6.aString586 != null) {
 							var7 = Class38.method497(var6.aString586, GameClient.aClass119_2919, -1992860654);
 							if (var7 != null && var7.equals(var5)) {
-								Class93.method1145(31, "", var0 + Class90.aString1093);
+								Class93.sendMessage(31, "", var0 + Class90.aString1093);
 								return;
 							}
 						}
@@ -174,21 +174,21 @@ public class Class44 {
 						Class46 var8 = GameClient.aClass46Array3136[var4];
 						var3 = Class38.method497(var8.aString658, GameClient.aClass119_2919, -1837733720);
 						if (var3 != null && var3.equals(var5)) {
-							Class93.method1145(31, "", Class90.aString1230 + var0 + Class90.aString1231);
+							Class93.sendMessage(31, "", Class90.aString1230 + var0 + Class90.aString1231);
 							return;
 						}
 
 						if (var8.aString647 != null) {
 							var7 = Class38.method497(var8.aString647, GameClient.aClass119_2919, -1719269775);
 							if (var7 != null && var7.equals(var5)) {
-								Class93.method1145(31, "", Class90.aString1230 + var0 + Class90.aString1231);
+								Class93.sendMessage(31, "", Class90.aString1230 + var0 + Class90.aString1231);
 								return;
 							}
 						}
 					}
 
 					if (Class38.method497(Player.me.aString2835, GameClient.aClass119_2919, -1545418178).equals(var5)) {
-						Class93.method1145(31, "", Class90.aString1179);
+						Class93.sendMessage(31, "", Class90.aString1179);
 					} else {
 						GameClient.secureBuffer.writeOpcode(181);
 						GameClient.secureBuffer.writeByte(Class56.calcStringBytes(var0));
@@ -196,7 +196,7 @@ public class Class44 {
 					}
 				}
 			} else {
-				Class93.method1145(31, "", Class90.aString1224);
+				Class93.sendMessage(31, "", Class90.aString1224);
 			}
 		}
 	}

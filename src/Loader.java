@@ -24,7 +24,7 @@ public class Loader implements AppletStub {
 	public static final int WORLD = 1;
 	public static final int REV = 86;
 	public static final boolean local = true;
-	public static final String SERVER_NAME = "Edgeville TEST CLIENT";
+	public static final String SERVER_NAME = "Edgeville [DEVELOPMENT]";
 
 	/**
 	 * No need to configure anything lower

@@ -182,7 +182,7 @@ public class Class106 {
 						int var41;
 						if (var16.anInt1943 * -202095703 != 0) {
 							if (var16.anInt1943 * -202095703 == 1336) {
-								if (GameClient.aBool2991 || true) {
+								if (GameClient.aBool2991/* || true*/) {
 									var30 += 15;
 									Class44.aClass109_Sub23_Sub14_Sub4_Sub1_621.method3317("Fps:" + GameClient.anInt2837 * -1026684785, var16.anInt1954 * 2096072399 + var21, var30, 16776960, -1);
 									var30 += 15;

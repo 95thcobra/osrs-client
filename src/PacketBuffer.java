@@ -66,14 +66,14 @@ public final class PacketBuffer extends DataBuffer {
 						Class46 var2 = GameClient.aClass46Array3136[var5];
 						var3 = Class38.method497(var2.aString658, GameClient.aClass119_2919, -1950750634);
 						if (var3 != null && var3.equals(var4)) {
-							Class93.method1145(30, "", var0 + Class90.aString1223);
+							Class93.sendMessage(30, "", var0 + Class90.aString1223);
 							return;
 						}
 
 						if (var2.aString647 != null) {
 							var6 = Class38.method497(var2.aString647, GameClient.aClass119_2919, -2090291278);
 							if (var6 != null && var6.equals(var4)) {
-								Class93.method1145(30, "", var0 + Class90.aString1223);
+								Class93.sendMessage(30, "", var0 + Class90.aString1223);
 								return;
 							}
 						}
@@ -83,21 +83,21 @@ public final class PacketBuffer extends DataBuffer {
 						Class41 var7 = GameClient.aClass41Array2895[var5];
 						var3 = Class38.method497(var7.aString597, GameClient.aClass119_2919, -1982342766);
 						if (var3 != null && var3.equals(var4)) {
-							Class93.method1145(30, "", Class90.aString1084 + var0 + Class90.aString1229);
+							Class93.sendMessage(30, "", Class90.aString1084 + var0 + Class90.aString1229);
 							return;
 						}
 
 						if (var7.aString586 != null) {
 							var6 = Class38.method497(var7.aString586, GameClient.aClass119_2919, -1803011952);
 							if (var6 != null && var6.equals(var4)) {
-								Class93.method1145(30, "", Class90.aString1084 + var0 + Class90.aString1229);
+								Class93.sendMessage(30, "", Class90.aString1084 + var0 + Class90.aString1229);
 								return;
 							}
 						}
 					}
 
 					if (Class38.method497(Player.me.aString2835, GameClient.aClass119_2919, -1937972668).equals(var4)) {
-						Class93.method1145(30, "", Class90.aString1226);
+						Class93.sendMessage(30, "", Class90.aString1226);
 					} else {
 						GameClient.secureBuffer.writeOpcode(137);
 						GameClient.secureBuffer.writeByte(Class56.calcStringBytes(var0));
@@ -105,7 +105,7 @@ public final class PacketBuffer extends DataBuffer {
 					}
 				}
 			} else {
-				Class93.method1145(30, "", Class90.aString1312);
+				Class93.sendMessage(30, "", Class90.aString1312);
 			}
 		}
 	}

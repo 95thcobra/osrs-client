@@ -753,11 +753,11 @@ public class CacheableEntry_Sub23_Sub16_Sub7 extends CacheableEntry_Sub23_Sub16 
 															for (Class126_Sub1 var42 = (Class126_Sub1) GameClient.aClass115_2892.method1452(); var42 != null; var42 = (Class126_Sub1) GameClient.aClass115_2892.method1456()) {
 																if ((long) (var42.anInt1651 * 1588448769) < Class10.method216((short) 255) / 1000L - 5L) {
 																	if (var42.aShort1645 > 0) {
-																		Class93.method1145(5, "", var42.aString1644 + Class90.aString1203);
+																		Class93.sendMessage(5, "", var42.aString1644 + Class90.aString1203);
 																	}
 
 																	if (var42.aShort1645 == 0) {
-																		Class93.method1145(5, "", var42.aString1644 + Class90.aString1204);
+																		Class93.sendMessage(5, "", var42.aString1644 + Class90.aString1204);
 																	}
 
 																	var42.method1564();

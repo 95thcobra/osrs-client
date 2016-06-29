@@ -14,7 +14,10 @@ public class Class79 {
 	static void method1034(ScriptInvocation var0, int var1, byte var2) {
 		Object[] var3 = var0.parameters;
 		int var4 = ((Integer) var3[0]).intValue();
-		//System.out.printf("Invoking script %d param array %s%n", var4, Arrays.toString(var3));
+
+		if (var4 != 533 && var4 != 846 && var4 != 526)
+			System.out.printf("Invoking script %d param array %s%n", var4, Arrays.toString(var3));
+
 		CacheableEntry_Sub23_Sub17 var5 = Class117.method1482(var4, 433742564);
 		if (var5 != null) {
 			int istackptr = 0;
@@ -87,8 +90,7 @@ public class Class79 {
 				var14 = 0;
 				Class1.anInt12 = var0.anInt1778 * 1696435903;
 
-				label3086:
-				while (true) {
+				label3086: while (true) {
 					++var14;
 					if (var14 > var1) {
 						throw new RuntimeException();
@@ -1320,7 +1322,7 @@ public class Class79 {
 									if (opcode == 3100) {
 										--var7;
 										var52 = Class1.stringstack[var7];
-										Class93.method1145(0, "", var52);
+										Class93.sendMessage(0, "", var52);
 										continue;
 									}
 
@@ -2426,8 +2428,7 @@ public class Class79 {
 													var27 = 0;
 													char var35 = 0;
 
-													label2821:
-													while (true) {
+													label2821: while (true) {
 														if (var25 - var27 >= var61 && var26 - var35 >= var87) {
 															int var99 = Math.min(var61, var87);
 
@@ -3229,7 +3230,7 @@ public class Class79 {
 												if (opcode == 5020) {
 													--var7;
 													var52 = Class1.stringstack[var7];
-													Class46.method697(var52, (byte) 7);
+													Class46.toggles(var52, (byte) 7);
 													continue;
 												}
 
@@ -3364,20 +3365,24 @@ public class Class79 {
 							}
 						}
 
-						if(opcode == 5505) {
-							Class1.intstack[istackptr++] = 0;//GameClient.anInt3006 * -1150538009;
+						if (opcode == 5505) {
+							Class1.intstack[istackptr++] = 0;// GameClient.anInt3006
+																// *
+																// -1150538009;
 							continue;
 						}
 
-						if(opcode == 5506) {
-							Class1.intstack[istackptr++] = 0;//GameClient.anInt3007 * -1032455509;
+						if (opcode == 5506) {
+							Class1.intstack[istackptr++] = 0;// GameClient.anInt3007
+																// *
+																// -1032455509;
 							continue;
 						}
 
-						if(opcode == 5530) {
+						if (opcode == 5530) {
 							--istackptr;
 							var16 = Class1.intstack[istackptr];
-							if(var16 < 0) {
+							if (var16 < 0) {
 								var16 = 0;
 							}
 
@@ -3385,7 +3390,7 @@ public class Class79 {
 							continue;
 						}
 
-						if(opcode == 5531) {
+						if (opcode == 5531) {
 							Class1.intstack[istackptr++] = Class106.zoom;
 							continue;
 						}
