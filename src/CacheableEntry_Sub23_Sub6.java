@@ -19,9 +19,9 @@ public class CacheableEntry_Sub23_Sub6 extends CacheableEntry {
 	}
 
 	static void setLoginMessages(String var0, String var1, String var2) {
-		Class3.aString58 = var0;
-		Class3.aString59 = var1;
-		Class3.aString60 = var2;
+		NpcFlags.aString58 = var0;
+		NpcFlags.aString59 = var1;
+		NpcFlags.aString60 = var2;
 	}
 
 	void method2358(DataBuffer var1, int var2, int var3, int var4) {

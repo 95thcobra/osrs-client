@@ -46,18 +46,18 @@ public class Class93 {
 					CacheableEntry_Sub23_Sub16_Sub2.method2965(Class60.aCanvas771, IndexDescriptor.aClass94_Sub1_1369, Class18.aClass94_Sub1_217, true, GameClient.anInt2868 * -684224463 == 11 ? 4 : 0, -171479774);
 				} else if (var0 == 11) {
 					CacheableEntry_Sub23_Sub16_Sub2.method2965(Class60.aCanvas771, IndexDescriptor.aClass94_Sub1_1369, Class18.aClass94_Sub1_217, false, 4, 160189152);
-				} else if (Class3.aBool63) {
-					Class3.aClass109_Sub23_Sub14_Sub1_43 = null;
-					Class3.aClass109_Sub23_Sub14_Sub1_44 = null;
+				} else if (NpcFlags.aBool63) {
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_43 = null;
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44 = null;
 					ItemDef.aClass109_Sub23_Sub14_Sub1Array2140 = null;
 					Class134.aClass109_Sub23_Sub14_Sub2_1599 = null;
-					Class3.aClass109_Sub23_Sub14_Sub2_45 = null;
+					NpcFlags.aClass109_Sub23_Sub14_Sub2_45 = null;
 					Class106.aClass109_Sub23_Sub14_Sub1_1475 = null;
 					Class118.aClass109_Sub23_Sub14_Sub1Array1537 = null;
-					Class3.aClass109_Sub23_Sub14_Sub1_41 = null;
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_41 = null;
 					Class42.aClass109_Sub23_Sub14_Sub1_605 = null;
 					Class108.aClass109_Sub23_Sub14_Sub2Array1511 = null;
-					Class3.aClass109_Sub23_Sub14_Sub1Array64 = null;
+					NpcFlags.aClass109_Sub23_Sub14_Sub1Array64 = null;
 					Class26.aClass109_Sub23_Sub14_Sub1Array329 = null;
 					Class38.aClass109_Sub23_Sub14_Sub1Array511 = null;
 					Class73.aClass109_Sub23_Sub14_Sub1_886 = null;
@@ -71,7 +71,7 @@ public class Class93 {
 					CacheableEntry_Sub23_Sub16_Sub4.anIntArray2617 = null;
 					IndexDescriptor_Sub1.method2148(2, 1127013233);
 					GameClient.method3561(true, (byte) 36);
-					Class3.aBool63 = false;
+					NpcFlags.aBool63 = false;
 				}
 			} else {
 				CacheableEntry_Sub23_Sub16_Sub2.method2965(Class60.aCanvas771, IndexDescriptor.aClass94_Sub1_1369, Class18.aClass94_Sub1_217, true, 0, 846283920);
@@ -88,7 +88,7 @@ public class Class93 {
 			if (GameClient.anInt3058 * -1923892843 != CacheableEntry_Sub23_Sub16_Sub3.anInt2577 * -1093536619) {
 				GameClient.anInt3058 = CacheableEntry_Sub23_Sub16_Sub3.anInt2577 * -863727871;
 				int var10 = CacheableEntry_Sub23_Sub16_Sub3.anInt2577 * -1093536619;
-				int[] var5 = Class3.aClass109_Sub23_Sub14_Sub2_73.pixels;
+				int[] var5 = NpcFlags.aClass109_Sub23_Sub14_Sub2_73.pixels;
 				int var6 = var5.length;
 
 				int var8;
@@ -116,7 +116,7 @@ public class Class93 {
 
 				var8 = (238 + (int) (Math.random() * 20.0D) - 10 << 16) + (238 + (int) (Math.random() * 20.0D) - 10 << 8) + (238 + (int) (Math.random() * 20.0D) - 10);
 				var11 = 238 + (int) (Math.random() * 20.0D) - 10 << 16;
-				Class3.aClass109_Sub23_Sub14_Sub2_73.method3045();
+				NpcFlags.aClass109_Sub23_Sub14_Sub2_73.method3045();
 
 				int var12;
 				for (var9 = 1; var9 < 103; var9++) {

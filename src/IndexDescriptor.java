@@ -23,7 +23,7 @@ public abstract class IndexDescriptor {
 
 	void method1149(byte[] var1, byte var2) {
 		int var3 = var1.length;
-		int var9 = Class3.method114(var1, 0, var3, 59142782);
+		int var9 = NpcFlags.method114(var1, 0, var3, 59142782);
 		crc = var9 * -1190064981;
 		DataBuffer var5 = new DataBuffer(Class70.method938(var1, 1163672584));
 		int var8 = var5.readUByte();
@@ -350,10 +350,10 @@ public abstract class IndexDescriptor {
 				} catch (RuntimeException var19) {
 					String var12 = "" + (var2 != null) + "," + var1 + "," + var20.length + ",";
 					var13 = var20.length;
-					int var14 = Class3.method114(var20, 0, var13, 59142782);
+					int var14 = NpcFlags.method114(var20, 0, var13, 59142782);
 					String var15 = var12 + var14 + ",";
 					var16 = var20.length - 2;
-					var17 = Class3.method114(var20, 0, var16, 59142782);
+					var17 = NpcFlags.method114(var20, 0, var16, 59142782);
 					throw Class63.method836(var19, var15 + var17 + "," + anIntArray1350[var1] + "," + crc * -212693501);
 				}
 

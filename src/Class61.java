@@ -54,10 +54,10 @@ public class Class61 {
 
 	static final void method819(int var0, int var1) {
 		short var2 = 256;
-		Class3.anInt51 += var0 * 481926528;
+		NpcFlags.anInt51 += var0 * 481926528;
 		int var7;
-		if (Class3.anInt51 * 348057075 > Class66.anIntArray840.length) {
-			Class3.anInt51 -= Class66.anIntArray840.length * -1472629957;
+		if (NpcFlags.anInt51 * 348057075 > Class66.anIntArray840.length) {
+			NpcFlags.anInt51 -= Class66.anIntArray840.length * -1472629957;
 			var7 = (int) (Math.random() * 12.0D);
 			ScriptInvocation.method1837(ItemDef.aClass109_Sub23_Sub14_Sub1Array2140[var7]);
 		}
@@ -69,7 +69,7 @@ public class Class61 {
 		int var3;
 		int var10;
 		for (var3 = 0; var3 < var9; var3++) {
-			var10 = Class30.anIntArray382[var7 + var8] - Class66.anIntArray840[var7 + Class3.anInt51 * 348057075 & Class66.anIntArray840.length - 1] * var0 / 6;
+			var10 = Class30.anIntArray382[var7 + var8] - Class66.anIntArray840[var7 + NpcFlags.anInt51 * 348057075 & Class66.anIntArray840.length - 1] * var0 / 6;
 			if (var10 < 0) {
 				var10 = 0;
 			}
@@ -92,44 +92,44 @@ public class Class61 {
 			}
 		}
 
-		if (Class3.anInt49 * 948700643 > 0) {
-			Class3.anInt49 -= var0 * 961388332;
+		if (NpcFlags.anInt49 * 948700643 > 0) {
+			NpcFlags.anInt49 -= var0 * 961388332;
 		}
 
-		if (Class3.anInt50 * -476800185 > 0) {
-			Class3.anInt50 -= var0 * -1058375204;
+		if (NpcFlags.anInt50 * -476800185 > 0) {
+			NpcFlags.anInt50 -= var0 * -1058375204;
 		}
 
-		if (Class3.anInt49 * 948700643 == 0 && Class3.anInt50 * -476800185 == 0) {
+		if (NpcFlags.anInt49 * 948700643 == 0 && NpcFlags.anInt50 * -476800185 == 0) {
 			var3 = (int) (Math.random() * (double) (2000 / var0));
 			if (var3 == 0) {
-				Class3.anInt49 = 1302277120;
+				NpcFlags.anInt49 = 1302277120;
 			}
 
 			if (var3 == 1) {
-				Class3.anInt50 = -361112576;
+				NpcFlags.anInt50 = -361112576;
 			}
 		}
 
 		for (var3 = 0; var3 < var2 - var0; var3++) {
-			Class3.anIntArray61[var3] = Class3.anIntArray61[var0 + var3];
+			NpcFlags.anIntArray61[var3] = NpcFlags.anIntArray61[var0 + var3];
 		}
 
 		for (var3 = var2 - var0; var3 < var2; var3++) {
-			Class3.anIntArray61[var3] = (int) (Math.sin((double) (Class3.anInt46 * -133635249) / 14.0D) * 16.0D + Math.sin((double) (Class3.anInt46 * -133635249) / 15.0D) * 14.0D + Math.sin((double) (Class3.anInt46 * -133635249) / 16.0D) * 12.0D);
-			Class3.anInt46 += 1705399215;
+			NpcFlags.anIntArray61[var3] = (int) (Math.sin((double) (NpcFlags.anInt46 * -133635249) / 14.0D) * 16.0D + Math.sin((double) (NpcFlags.anInt46 * -133635249) / 15.0D) * 14.0D + Math.sin((double) (NpcFlags.anInt46 * -133635249) / 16.0D) * 12.0D);
+			NpcFlags.anInt46 += 1705399215;
 		}
 
-		Class3.anInt52 += var0 * -903418597;
+		NpcFlags.anInt52 += var0 * -903418597;
 		var3 = ((GameClient.cycle * 1026470457 & 1) + var0) / 2;
 		if (var3 > 0) {
-			for (var10 = 0; var10 < Class3.anInt52 * -1921483924; var10++) {
+			for (var10 = 0; var10 < NpcFlags.anInt52 * -1921483924; var10++) {
 				var6 = (int) (Math.random() * 124.0D) + 2;
 				var4 = (int) (Math.random() * 128.0D) + 128;
 				Class30.anIntArray382[var6 + (var4 << 7)] = 192;
 			}
 
-			Class3.anInt52 = 0;
+			NpcFlags.anInt52 = 0;
 
 			int var5;
 			for (var10 = 0; var10 < var2; var10++) {

@@ -243,7 +243,7 @@ public class Class106 {
 
 											if (var71.anInt2609 * 1237058141 < 0) {
 												var14 = -(var71.anInt2609 * 1237058141) - 1;
-												System.out.println("kek " + var14);
+												//System.out.println("kek " + var14);
 												Player var55;
 												if (var14 == GameClient.myIndex * -1731449945) {
 													var55 = Player.me;
@@ -697,7 +697,7 @@ public class Class106 {
 										var19 = GameClient.anInt2948 * -1072839225 + GameClient.anInt2880 * 1847328669 & 2047;
 										var13 = Player.me.anInt2521 * -1051150961 / 32 + 48;
 										var23 = 464 - Player.me.anInt2505 * -844883935 / 32;
-										Class3.aClass109_Sub23_Sub14_Sub2_73.method3008(var21, var30, var70.anInt2439 * -2016633209, var70.anInt2438 * -633411239, var13, var23, var19, 256 + GameClient.anInt2936 * 461573195, var70.anIntArray2440, var70.anIntArray2441);
+										NpcFlags.aClass109_Sub23_Sub14_Sub2_73.method3008(var21, var30, var70.anInt2439 * -2016633209, var70.anInt2438 * -633411239, var13, var23, var19, 256 + GameClient.anInt2936 * 461573195, var70.anIntArray2440, var70.anIntArray2441);
 
 										for (var25 = 0; var25 < GameClient.anInt3097 * -1281668133; var25++) {
 											var17 = 2 + GameClient.anIntArray3098[var25] * 4 - Player.me.anInt2521 * -1051150961 / 32;

@@ -317,10 +317,10 @@ public class Class23 {
 								var11 = Class97.aDataBuffer_1396.readInt();
 								long var12 = (long) (var9 + (var8 << 16));
 								CacheableEntry_Sub23_Sub19 var14 = (CacheableEntry_Sub23_Sub19) Class97.aJagexMap_1381.get(var12);
-								Class79.aBool947 = true;
+								MorePacketEncode.aBool947 = true;
 								if (var14 == null) {
 									var14 = (CacheableEntry_Sub23_Sub19) Class97.aJagexMap_1386.get(var12);
-									Class79.aBool947 = false;
+									MorePacketEncode.aBool947 = false;
 								}
 
 								if (var14 == null) {
@@ -394,11 +394,11 @@ public class Class23 {
 
 									Class97.anInt1394 = 0;
 									Class97.anInt1387 = 0;
-									DataBuffer.aClass109_Sub23_Sub19_1831.aClass94_Sub1_2450.method2130((int) (DataBuffer.aClass109_Sub23_Sub19_1831.key & 65535L), Class97.aDataBuffer_1389.data, (DataBuffer.aClass109_Sub23_Sub19_1831.key & 16711680L) == 16711680L, Class79.aBool947, (byte) 91);
+									DataBuffer.aClass109_Sub23_Sub19_1831.aClass94_Sub1_2450.method2130((int) (DataBuffer.aClass109_Sub23_Sub19_1831.key & 65535L), Class97.aDataBuffer_1389.data, (DataBuffer.aClass109_Sub23_Sub19_1831.key & 16711680L) == 16711680L, MorePacketEncode.aBool947, (byte) 91);
 								}
 
 								DataBuffer.aClass109_Sub23_Sub19_1831.unlink();
-								if (Class79.aBool947) {
+								if (MorePacketEncode.aBool947) {
 									Class97.anInt1382 -= 111830449;
 								} else {
 									Class97.anInt1377 += 434769637;

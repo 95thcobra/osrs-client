@@ -52,9 +52,9 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 				GameClient.aClass141Array2923[var1] = new Class141(104, 104);
 			}
 
-			Class3.aClass109_Sub23_Sub14_Sub2_73 = new RenderedItemImage(512, 512);
-			Class3.aString56 = Class90.aString1098;
-			Class3.anInt66 = 1669447431;
+			NpcFlags.aClass109_Sub23_Sub14_Sub2_73 = new RenderedItemImage(512, 512);
+			NpcFlags.aString56 = Class90.aString1098;
+			NpcFlags.anInt66 = 1669447431;
 			GameClient.anInt2889 = 356857284;
 		} else {
 			int var2;
@@ -72,8 +72,8 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 				}
 
 				Class39.method535(var23, 500, 800, 512, 334);
-				Class3.aString56 = Class90.aString1069;
-				Class3.anInt66 = -956072434;
+				NpcFlags.aString56 = Class90.aString1069;
+				NpcFlags.anInt66 = -956072434;
 				GameClient.anInt2889 = -1612197722;
 			} else if (GameClient.anInt2889 * 1523524053 == 30) {
 				Class54.aClass94_Sub1_724 = GameClient.method3552(0, false, true, true, 719007803);
@@ -92,8 +92,8 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 				Class121.aClass94_Sub1_1553 = GameClient.method3552(13, true, false, true, 719007803);
 				CacheableEntry_Sub23_Sub16_Sub1.aClass94_Sub1_2502 = GameClient.method3552(14, false, true, false, 719007803);
 				GameClient.aClass94_Sub1_2928 = GameClient.method3552(15, false, true, true, 719007803);
-				Class3.aString56 = Class90.aString1070;
-				Class3.anInt66 = -1912144868;
+				NpcFlags.aString56 = Class90.aString1070;
+				NpcFlags.anInt66 = -1912144868;
 				GameClient.anInt2889 = 713714568;
 			} else if (GameClient.anInt2889 * 1523524053 == 40) {
 				byte var22 = 0;
@@ -115,13 +115,13 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 				var1 += GameClient.aClass94_Sub1_2928.method2128(403675217) * 2 / 100;
 				if (var1 != 100) {
 					if (var1 != 0) {
-						Class3.aString56 = Class90.aString1185 + var1 + "%";
+						NpcFlags.aString56 = Class90.aString1185 + var1 + "%";
 					}
 
-					Class3.anInt66 = 1426749994;
+					NpcFlags.anInt66 = 1426749994;
 				} else {
-					Class3.aString56 = Class90.aString1072;
-					Class3.anInt66 = 1426749994;
+					NpcFlags.aString56 = Class90.aString1072;
+					NpcFlags.anInt66 = 1426749994;
 					GameClient.anInt2889 = -270812935;
 				}
 			} else {
@@ -147,8 +147,8 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 					Class48.aClass109_Sub5_Sub1_672 = new LinkedEntry_Sub5_Sub1();
 					IndexDescriptor.aClass2_1353.method48(Class48.aClass109_Sub5_Sub1_672, (byte) 0);
 					Class76.aClass10_925 = new Class10(22050, Class2.anInt34 * -46901051);
-					Class3.aString56 = Class90.aString1073;
-					Class3.anInt66 = -1198769871;
+					NpcFlags.aString56 = Class90.aString1073;
+					NpcFlags.anInt66 = -1198769871;
 					GameClient.anInt2889 = -1255340438;
 				} else if (GameClient.anInt2889 * 1523524053 == 50) {
 					var1 = 0;
@@ -171,12 +171,12 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 					}
 
 					if (var1 < 3) {
-						Class3.aString56 = Class90.aString1147 + var1 * 100 / 3 + "%";
-						Class3.anInt66 = 470677560;
+						NpcFlags.aString56 = Class90.aString1147 + var1 * 100 / 3 + "%";
+						NpcFlags.anInt66 = 470677560;
 					} else {
 						Class44.myMachine = new MachineInfo(true);
-						Class3.aString56 = Class90.aString1075;
-						Class3.anInt66 = 470677560;
+						NpcFlags.aString56 = Class90.aString1075;
+						NpcFlags.anInt66 = 470677560;
 						GameClient.anInt2889 = 1070571852;
 					}
 				} else {
@@ -224,18 +224,18 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 						var13.method1167("sl_button", "", (byte) 97);
 						byte var15 = 8;
 						if (var2 < var15) {
-							Class3.aString56 = Class90.aString1076 + var2 * 100 / var15 + "%";
-							Class3.anInt66 = -485394874;
+							NpcFlags.aString56 = Class90.aString1076 + var2 * 100 / var15 + "%";
+							NpcFlags.anInt66 = -485394874;
 						} else {
-							Class3.aString56 = Class90.aString1055;
-							Class3.anInt66 = -485394874;
+							NpcFlags.aString56 = Class90.aString1055;
+							NpcFlags.anInt66 = -485394874;
 							Class93.method1146(5, 2141747307);
 							GameClient.anInt2889 = -898483154;
 						}
 					} else if (GameClient.anInt2889 * 1523524053 == 70) {
 						if (!Class35.index2.method1155((byte) -119)) {
-							Class3.aString56 = Class90.aString1059 + Class35.index2.method2133((byte) 117) + "%";
-							Class3.anInt66 = -1441467308;
+							NpcFlags.aString56 = Class90.aString1059 + Class35.index2.method2133((byte) 117) + "%";
+							NpcFlags.anInt66 = -1441467308;
 						} else {
 							IndexDescriptor_Sub1 var20 = Class35.index2;
 							CacheableEntry_Sub23_Sub11.aIndexDescriptor_2331 = var20;
@@ -263,53 +263,53 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 							IndexDescriptor_Sub1 var6 = Class35.index2;
 							CacheableEntry_Sub23_Sub1.aIndexDescriptor_2092 = var6;
 							Class63_Sub1.method2090(Class35.index2, -397400647);
-							Class3.aString56 = Class90.aString1079;
-							Class3.anInt66 = -1441467308;
+							NpcFlags.aString56 = Class90.aString1079;
+							NpcFlags.anInt66 = -1441467308;
 							GameClient.anInt2889 = 1427429136;
 						}
 					} else if (GameClient.anInt2889 * 1523524053 != 80) {
 						if (GameClient.anInt2889 * 1523524053 == 90) {
 							if (!ScriptInvocation.aClass94_Sub1_1783.method1155((byte) -41)) {
-								Class3.aString56 = Class90.aString1188 + ScriptInvocation.aClass94_Sub1_1783.method2133((byte) 105) + "%";
-								Class3.anInt66 = -14717314;
+								NpcFlags.aString56 = Class90.aString1188 + ScriptInvocation.aClass94_Sub1_1783.method2133((byte) 105) + "%";
+								NpcFlags.anInt66 = -14717314;
 							} else {
 								Class45 var19 = new Class45(ScriptInvocation.aClass94_Sub1_1783, Class18.aClass94_Sub1_217, 20, 0.8D, GameClient.aBool2864 ? 64 : 128);
 								CacheableEntry_Sub23_Sub14_Sub3.method3153(var19);
 								CacheableEntry_Sub23_Sub14_Sub3.method3154(0.8D);
-								Class3.aString56 = Class90.aString1083;
-								Class3.anInt66 = -14717314;
+								NpcFlags.aString56 = Class90.aString1083;
+								NpcFlags.anInt66 = -14717314;
 								GameClient.anInt2889 = -184768586;
 							}
 						} else if (GameClient.anInt2889 * 1523524053 == 110) {
 							Class41.aClass48_588 = new Class48();
 							Class50.aClass73_693.submitRunnable(Class41.aClass48_588, 10, (byte) 7);
-							Class3.aString56 = Class90.aString1222;
-							Class3.anInt66 = -2115133206;
+							NpcFlags.aString56 = Class90.aString1222;
+							NpcFlags.anInt66 = -2115133206;
 							GameClient.anInt2889 = 2141143704;
 						} else if (GameClient.anInt2889 * 1523524053 == 120) {
 							if (!IndexDescriptor.aClass94_Sub1_1369.method1167("huffman", "", (byte) 8)) {
-								Class3.aString56 = Class90.aString1228 + 0 + "%";
-								Class3.anInt66 = 1129626144;
+								NpcFlags.aString56 = Class90.aString1228 + 0 + "%";
+								NpcFlags.anInt66 = 1129626144;
 							} else {
 								Class60 var18 = new Class60(IndexDescriptor.aClass94_Sub1_1369.method1166("huffman", "", (byte) 0));
 								Class137.aClass60_1610 = var18;
-								Class3.aString56 = Class90.aString1233;
-								Class3.anInt66 = 1129626144;
+								NpcFlags.aString56 = Class90.aString1233;
+								NpcFlags.anInt66 = 1129626144;
 								GameClient.anInt2889 = 172088698;
 							}
 						} else if (GameClient.anInt2889 * 1523524053 == 130) {
 							if (!Class35.aClass94_Sub1_477.method1155((byte) -120)) {
-								Class3.aString56 = Class90.aString1131 + Class35.aClass94_Sub1_477.method2133((byte) 88) * 4 / 5 + "%";
-								Class3.anInt66 = -970789748;
+								NpcFlags.aString56 = Class90.aString1131 + Class35.aClass94_Sub1_477.method2133((byte) 88) * 4 / 5 + "%";
+								NpcFlags.anInt66 = -970789748;
 							} else if (!Connection.aClass94_Sub1_972.method1155((byte) -57)) {
-								Class3.aString56 = Class90.aString1131 + (80 + Connection.aClass94_Sub1_972.method2133((byte) 79) / 6) + "%";
-								Class3.anInt66 = -970789748;
+								NpcFlags.aString56 = Class90.aString1131 + (80 + Connection.aClass94_Sub1_972.method2133((byte) 79) / 6) + "%";
+								NpcFlags.anInt66 = -970789748;
 							} else if (!Class121.aClass94_Sub1_1553.method1155((byte) -90)) {
-								Class3.aString56 = Class90.aString1131 + (96 + Class121.aClass94_Sub1_1553.method2133((byte) 34) / 20) + "%";
-								Class3.anInt66 = -970789748;
+								NpcFlags.aString56 = Class90.aString1131 + (96 + Class121.aClass94_Sub1_1553.method2133((byte) 34) / 20) + "%";
+								NpcFlags.anInt66 = -970789748;
 							} else {
-								Class3.aString56 = Class90.aString1088;
-								Class3.anInt66 = -970789748;
+								NpcFlags.aString56 = Class90.aString1088;
+								NpcFlags.anInt66 = -970789748;
 								GameClient.anInt2889 = -1796966308;
 							}
 						} else if (GameClient.anInt2889 * 1523524053 == 140) {
@@ -396,8 +396,8 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 						}
 
 						if (var1 < 13) {
-							Class3.aString56 = Class90.aString1159 + var1 * 100 / 13 + "%";
-							Class3.anInt66 = 1897427554;
+							NpcFlags.aString56 = Class90.aString1159 + var1 * 100 / 13 + "%";
+							NpcFlags.anInt66 = 1897427554;
 						} else {
 							CacheableEntry_Sub23_Sub14_Sub4.aClass109_Sub23_Sub14_Sub1Array2799 = Class89.aClass109_Sub23_Sub14_Sub1Array1052;
 							EnumDef.aClass109_Sub23_Sub14_Sub2_2198.method2989();
@@ -411,8 +411,8 @@ public class CacheableEntry_Sub23_Sub17 extends CacheableEntry {
 							}
 
 							Class133.aClass109_Sub23_Sub14_Sub1Array1597[0].method2976(var5 + var3, var5 + var4, var2 + var5);
-							Class3.aString56 = Class90.aString1307;
-							Class3.anInt66 = 1897427554;
+							NpcFlags.aString56 = Class90.aString1307;
+							NpcFlags.anInt66 = 1897427554;
 							GameClient.anInt2889 = -541625870;
 						}
 					}

@@ -176,8 +176,7 @@ public class Class2 {
 
 			int var4;
 			LinkedEntry_Sub5 var8;
-			label132:
-			for (var4 = 7; var9 != 0; --var4) {
+			label132: for (var4 = 7; var9 != 0; --var4) {
 				int var5;
 				int var6;
 				if (var4 < 0) {
@@ -194,8 +193,7 @@ public class Class2 {
 						var8 = null;
 						LinkedEntry_Sub5 var14 = aClass109_Sub5Array37[var5];
 
-						label126:
-						while (true) {
+						label126: while (true) {
 							while (true) {
 								if (var14 == null) {
 									break label126;
@@ -425,7 +423,12 @@ public class Class2 {
 
 			return var6 - var5;
 		} else {
-			return var2 == 2 ? var0.anInt710 * -1139554955 - var1.anInt710 * -1139554955 : (var2 == 3 ? (var0.aString707.equals("-") ? (var1.aString707.equals("-") ? 0 : (var3 ? -1 : 1)) : (var1.aString707.equals("-") ? (var3 ? 1 : -1) : var0.aString707.compareTo(var1.aString707))) : (var2 == 4 ? (var0.method730(-782303106) ? (var1.method730(-782303106) ? 0 : 1) : (var1.method730(-782303106) ? -1 : 0)) : (var2 == 5 ? (var0.method716(-2030677369) ? (var1.method716(-1744502434) ? 0 : 1) : (var1.method716(-730641731) ? -1 : 0)) : (var2 == 6 ? (var0.method717(-1037368077) ? (var1.method717(-592634570) ? 0 : 1) : (var1.method717(503193406) ? -1 : 0)) : (var2 == 7 ? (var0.method715((byte) 16) ? (var1.method715((byte) 16) ? 0 : 1) : (var1.method715((byte) 16) ? -1 : 0)) : var0.anInt703 * 1685233739 - var1.anInt703 * 1685233739)))));
+			return var2 == 2 ? var0.anInt710 * -1139554955 - var1.anInt710 * -1139554955
+					: (var2 == 3 ? (var0.aString707.equals("-") ? (var1.aString707.equals("-") ? 0 : (var3 ? -1 : 1)) : (var1.aString707.equals("-") ? (var3 ? 1 : -1) : var0.aString707.compareTo(var1.aString707)))
+							: (var2 == 4 ? (var0.method730(-782303106) ? (var1.method730(-782303106) ? 0 : 1) : (var1.method730(-782303106) ? -1 : 0))
+									: (var2 == 5 ? (var0.method716(-2030677369) ? (var1.method716(-1744502434) ? 0 : 1) : (var1.method716(-730641731) ? -1 : 0))
+											: (var2 == 6 ? (var0.method717(-1037368077) ? (var1.method717(-592634570) ? 0 : 1) : (var1.method717(503193406) ? -1 : 0))
+													: (var2 == 7 ? (var0.method715((byte) 16) ? (var1.method715((byte) 16) ? 0 : 1) : (var1.method715((byte) 16) ? -1 : 0)) : var0.anInt703 * 1685233739 - var1.anInt703 * 1685233739)))));
 		}
 	}
 
@@ -455,8 +458,8 @@ public class Class2 {
 			int lz = GameClient.gameBuffer.readULEShort();
 			int heightlevel = GameClient.gameBuffer.readUByteS();
 			int lx = GameClient.gameBuffer.readUShortLEA();
-
-			System.out.printf("Map c[%d, %d] l[%d, %d] h %d%n", mapx, mapz, lx, lz, heightlevel);
+			if (Loader.DEBUG)
+				System.out.printf("Map c[%d, %d] l[%d, %d] h %d%n", mapx, mapz, lx, lz, heightlevel);
 
 			LinkedEntry_Sub9.anIntArray1766 = new int[var4];
 			CacheableEntry_Sub23_Sub16_Sub2.mapFileIds = new int[var4];
@@ -483,12 +486,13 @@ public class Class2 {
 						Class77.landscapeFileId[var4] = Class126_Sub1.aClass94_Sub1_1643.method1170("l" + var13 + "_" + var2);
 
 						int keys[] = Class30.anIntArrayArray381[var4];
-						System.out.println("keys honey");
+						if (Loader.DEBUG)
+							System.out.println("keys honey");
 						try {
-							Files.write(new File("keys/" + var8 + ".txt").toPath(), String.format("%d\n%d\n%d\n%d",
-									keys[0], keys[1], keys[2], keys[3]).getBytes());
+							Files.write(new File("keys/" + var8 + ".txt").toPath(), String.format("%d\n%d\n%d\n%d", keys[0], keys[1], keys[2], keys[3]).getBytes());
 						} catch (Exception e) {
-							e.printStackTrace();;
+							e.printStackTrace();
+							;
 						}
 
 						++var4;

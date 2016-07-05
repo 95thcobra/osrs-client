@@ -96,7 +96,7 @@ public final class CacheableEntry_Sub23_Sub16_Sub4 extends CacheableEntry_Sub23_
 		GameClient.aBool3006 = true;
 		LinkedEntry_Sub6.anInt1731 = var9 * -930781789;
 		CacheableEntry_Sub23_Sub16_Sub7.anInt2779 = var8 * 950856023;
-		Class3.anInt74 = var3 * -2100781647;
+		NpcFlags.anInt74 = var3 * -2100781647;
 		CacheableEntry_Sub23_Sub16_Sub2.anInt2568 = GameClient.menuActionPtr * 809851591 + 1528091010;
 	}
 

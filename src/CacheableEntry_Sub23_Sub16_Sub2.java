@@ -203,23 +203,23 @@ public abstract class CacheableEntry_Sub23_Sub16_Sub2 extends CacheableEntry_Sub
 	}
 
 	static void method2965(Component var0, IndexDescriptor var1, IndexDescriptor var2, boolean var3, int var4, int var5) {
-		if (Class3.aBool63) {
+		if (NpcFlags.aBool63) {
 			if (var4 == 4) {
-				Class3.anInt57 = 1063267524;
+				NpcFlags.anInt57 = 1063267524;
 			}
 
 		} else {
-			Class3.anInt57 = var4 * -807924943;
+			NpcFlags.anInt57 = var4 * -807924943;
 			CacheableEntry_Sub23_Sub14.method2716();
 			byte[] var7 = var1.method1166("title.jpg", "", (byte) 0);
 			Class134.aClass109_Sub23_Sub14_Sub2_1599 = new RenderedItemImage(var7, var0);
-			Class3.aClass109_Sub23_Sub14_Sub2_45 = Class134.aClass109_Sub23_Sub14_Sub2_1599.method3019();
+			NpcFlags.aClass109_Sub23_Sub14_Sub2_45 = Class134.aClass109_Sub23_Sub14_Sub2_1599.method3019();
 			Class106.aClass109_Sub23_Sub14_Sub1_1475 = Class19.method342(var2, "logo", "", (byte) 96);
-			Class3.aClass109_Sub23_Sub14_Sub1_43 = Class19.method342(var2, "titlebox", "", (byte) 96);
-			Class3.aClass109_Sub23_Sub14_Sub1_44 = Class19.method342(var2, "titlebutton", "", (byte) 96);
+			NpcFlags.aClass109_Sub23_Sub14_Sub1_43 = Class19.method342(var2, "titlebox", "", (byte) 96);
+			NpcFlags.aClass109_Sub23_Sub14_Sub1_44 = Class19.method342(var2, "titlebutton", "", (byte) 96);
 			ItemDef.aClass109_Sub23_Sub14_Sub1Array2140 = Class24.method359(var2, "runes", "", -1685738212);
 			Class118.aClass109_Sub23_Sub14_Sub1Array1537 = Class24.method359(var2, "title_mute", "", -1519444044);
-			Class3.aClass109_Sub23_Sub14_Sub1_41 = Class19.method342(var2, "options_radio_buttons,0", "", (byte) 96);
+			NpcFlags.aClass109_Sub23_Sub14_Sub1_41 = Class19.method342(var2, "options_radio_buttons,0", "", (byte) 96);
 			Class42.aClass109_Sub23_Sub14_Sub1_605 = Class19.method342(var2, "options_radio_buttons,2", "", (byte) 96);
 			Class33.anIntArray430 = new int[256];
 
@@ -283,14 +283,14 @@ public abstract class CacheableEntry_Sub23_Sub16_Sub2 extends CacheableEntry_Sub
 			Class30.anIntArray382 = new int[32768];
 			CacheableEntry_Sub23_Sub16_Sub4.anIntArray2617 = new int[32768];
 			if (var3) {
-				Class3.aString55 = "";
-				Class3.password = "";
+				NpcFlags.aString55 = "";
+				NpcFlags.password = "";
 			}
 
 			Class107.anInt1499 = 0;
 			Class126_Sub1.aString1646 = "";
-			Class3.aBool75 = true;
-			Class3.aBool69 = false;
+			NpcFlags.aBool75 = true;
+			NpcFlags.aBool69 = false;
 			if (!Class15.aClass35_195.aBool473) {
 				IndexDescriptor_Sub1 var10 = Class46.aClass94_Sub1_652;
 				int var8 = var10.method1170("scape main");
@@ -307,12 +307,12 @@ public abstract class CacheableEntry_Sub23_Sub16_Sub2 extends CacheableEntry_Sub
 			}
 
 			GameClient.method3561(false, (byte) 27);
-			Class3.aBool63 = true;
-			Class3.anInt42 = (Class5.anInt98 * 2104430923 - GameClient.anInt3082 * 1386143757) / 2 * -1646540671;
-			Class3.anInt47 = Class3.anInt42 * -2012744469 - 1809848210;
-			Class134.aClass109_Sub23_Sub14_Sub2_1599.method2995(Class3.anInt42 * -468945023, 0);
-			Class3.aClass109_Sub23_Sub14_Sub2_45.method2995(Class3.anInt42 * -468945023 + 382, 0);
-			Class106.aClass109_Sub23_Sub14_Sub1_1475.method2972(Class3.anInt42 * -468945023 + 382 - Class106.aClass109_Sub23_Sub14_Sub1_1475.anInt2585 / 2, 18);
+			NpcFlags.aBool63 = true;
+			NpcFlags.anInt42 = (Class5.anInt98 * 2104430923 - GameClient.anInt3082 * 1386143757) / 2 * -1646540671;
+			NpcFlags.anInt47 = NpcFlags.anInt42 * -2012744469 - 1809848210;
+			Class134.aClass109_Sub23_Sub14_Sub2_1599.method2995(NpcFlags.anInt42 * -468945023, 0);
+			NpcFlags.aClass109_Sub23_Sub14_Sub2_45.method2995(NpcFlags.anInt42 * -468945023 + 382, 0);
+			Class106.aClass109_Sub23_Sub14_Sub1_1475.method2972(NpcFlags.anInt42 * -468945023 + 382 - Class106.aClass109_Sub23_Sub14_Sub1_1475.anInt2585 / 2, 18);
 		}
 	}
 

@@ -32,7 +32,7 @@ public class Class63_Sub1 extends Class63 {
 				var9 = var4;
 			}
 
-			int[] var7 = Class3.aClass109_Sub23_Sub14_Sub2_73.pixels;
+			int[] var7 = NpcFlags.aClass109_Sub23_Sub14_Sub2_73.pixels;
 			var8 = var1 * 4 + 24624 + (103 - var2) * 2048;
 			var17 = var6 >> 14 & 32767;
 			ObjectDef var13 = Class56.getObjectDef(var17);
@@ -127,7 +127,7 @@ public class Class63_Sub1 extends Class63 {
 					var8 = 15597568;
 				}
 
-				int[] var24 = Class3.aClass109_Sub23_Sub14_Sub2_73.pixels;
+				int[] var24 = NpcFlags.aClass109_Sub23_Sub14_Sub2_73.pixels;
 				var23 = (103 - var2) * 2048 + var1 * 4 + 24624;
 				if (var11 != 0 && var11 != 2) {
 					var24[var23] = var8;

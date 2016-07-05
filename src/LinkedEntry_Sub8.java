@@ -48,16 +48,16 @@ public class LinkedEntry_Sub8 extends LinkedEntry {
 						if (var2 != 1 && (Class46.aBool651 || var2 != 4)) {
 							var1 = Class74.anInt897 * -1031552075;
 							var5 = Class74.anInt898 * 1941423145;
-							if (var1 < LinkedEntry_Sub6.anInt1731 * 681506315 - 10 || var1 > Class3.anInt74 * 1712819025 + LinkedEntry_Sub6.anInt1731 * 681506315 + 10 || var5 < CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583 - 10 || var5 > 10 + CacheableEntry_Sub23_Sub16_Sub2.anInt2568 * -2090618933 + CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583) {
+							if (var1 < LinkedEntry_Sub6.anInt1731 * 681506315 - 10 || var1 > NpcFlags.anInt74 * 1712819025 + LinkedEntry_Sub6.anInt1731 * 681506315 + 10 || var5 < CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583 - 10 || var5 > 10 + CacheableEntry_Sub23_Sub16_Sub2.anInt2568 * -2090618933 + CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583) {
 								GameClient.aBool3006 = false;
-								CacheableEntry_Sub23_Sub16_Sub4.method3075(LinkedEntry_Sub6.anInt1731 * 681506315, CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583, Class3.anInt74 * 1712819025, CacheableEntry_Sub23_Sub16_Sub2.anInt2568 * -2090618933, -1538745902);
+								CacheableEntry_Sub23_Sub16_Sub4.method3075(LinkedEntry_Sub6.anInt1731 * 681506315, CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583, NpcFlags.anInt74 * 1712819025, CacheableEntry_Sub23_Sub16_Sub2.anInt2568 * -2090618933, -1538745902);
 							}
 						}
 
 						if (var2 == 1 || !Class46.aBool651 && var2 == 4) {
 							var1 = LinkedEntry_Sub6.anInt1731 * 681506315;
 							var5 = CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583;
-							var3 = Class3.anInt74 * 1712819025;
+							var3 = NpcFlags.anInt74 * 1712819025;
 							var15 = Class74.anInt891 * 1837550337;
 							var17 = Class74.anInt905 * -1013575437;
 							var8 = -1;
@@ -81,7 +81,7 @@ public class LinkedEntry_Sub8 extends LinkedEntry {
 							}
 
 							GameClient.aBool3006 = false;
-							CacheableEntry_Sub23_Sub16_Sub4.method3075(LinkedEntry_Sub6.anInt1731 * 681506315, CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583, Class3.anInt74 * 1712819025, CacheableEntry_Sub23_Sub16_Sub2.anInt2568 * -2090618933, -1886798059);
+							CacheableEntry_Sub23_Sub16_Sub4.method3075(LinkedEntry_Sub6.anInt1731 * 681506315, CacheableEntry_Sub23_Sub16_Sub7.anInt2779 * 1953108583, NpcFlags.anInt74 * 1712819025, CacheableEntry_Sub23_Sub16_Sub2.anInt2568 * -2090618933, -1886798059);
 						}
 					} else {
 						if ((var2 == 1 || !Class46.aBool651 && var2 == 4) && GameClient.menuActionPtr * 1324290403 > 0) {

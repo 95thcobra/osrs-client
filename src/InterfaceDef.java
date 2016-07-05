@@ -264,7 +264,7 @@ public class InterfaceDef extends LinkedEntry {
 
 			int id = (hash * 1582464481) >> 16;
 			if (id == 387) {
-				System.out.println("OK WE HAVE IT BB " + ((hash * 1582464481)&0xFFFF));
+				System.out.println("OK WE HAVE IT BB " + ((hash * 1582464481) & 0xFFFF));
 			}
 		}
 
@@ -307,9 +307,9 @@ public class InterfaceDef extends LinkedEntry {
 		if (contenttype * -1878336627 == 6) {
 			anInt1980 = -559540111;
 			anInt1981 = buffer.readUShort() * 999821601;
-            if (anInt1981 * -982469919 == 65535) {
-                anInt1981 = -999821601;
-            }
+			if (anInt1981 * -982469919 == 65535) {
+				anInt1981 = -999821601;
+			}
 
 			anInt1999 = -313235791;
 			anInt2019 = buffer.readUShort() * 1991015937;
@@ -538,22 +538,24 @@ public class InterfaceDef extends LinkedEntry {
 		itemContainerListeners = readTriggerArray(buffer);
 
 		if (hash() >> 16 == 218) {
-			System.out.println("Script: " + Arrays.toString(anObjectArray2018));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2017));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2025));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2029));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2039));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2056));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2036));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2037));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2051));
-			System.out.println("Script: " + Arrays.toString(anObjectArray1968));
-			System.out.println("Script: " + Arrays.toString(anObjectArray1939));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2021));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2022));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2026));
-			System.out.println("Script: " + Arrays.toString(anObjectArray2027));
-			System.out.println("Script: " + Arrays.toString(anObjectArray1951));
+			if (Loader.DEBUG) {
+				System.out.println("Script: " + Arrays.toString(anObjectArray2018));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2017));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2025));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2029));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2039));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2056));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2036));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2037));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2051));
+				System.out.println("Script: " + Arrays.toString(anObjectArray1968));
+				System.out.println("Script: " + Arrays.toString(anObjectArray1939));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2021));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2022));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2026));
+				System.out.println("Script: " + Arrays.toString(anObjectArray2027));
+				System.out.println("Script: " + Arrays.toString(anObjectArray1951));
+			}
 		}
 
 		skillTriggers = readTriggerArray(buffer);
@@ -799,7 +801,7 @@ public class InterfaceDef extends LinkedEntry {
 	}
 
 	public static Class75[] method2176(byte var0) {
-		return new Class75[]{Class75.aClass75_915, Class75.aClass75_919, Class75.aClass75_909, Class75.aClass75_910, Class75.aClass75_912};
+		return new Class75[] { Class75.aClass75_915, Class75.aClass75_919, Class75.aClass75_909, Class75.aClass75_910, Class75.aClass75_912 };
 	}
 
 	public RenderedItemImage method2179(int var1, int var2) {
@@ -829,7 +831,7 @@ public class InterfaceDef extends LinkedEntry {
 	}
 
 	static void method2182(ScriptInvocation var0, int var1) {
-		Class79.method1034(var0, 200000, (byte) 8);
+		MorePacketEncode.method1034(var0, 200000, (byte) 8);
 	}
 
 	public CacheableEntry_Sub23_Sub14_Sub4_Sub1 method2189(byte var1) {

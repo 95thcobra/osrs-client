@@ -247,7 +247,7 @@ public class ItemDef extends CacheableEntry {
 			}
 		}
 
-		CacheableEntry_Sub23_Sub16_Sub6 var5 = CacheableEntry_Sub23_Sub16_Sub6.method3283(Class79.aIndexDescriptor_950, inventoryModel * -1065714201, 0);
+		CacheableEntry_Sub23_Sub16_Sub6 var5 = CacheableEntry_Sub23_Sub16_Sub6.method3283(MorePacketEncode.aIndexDescriptor_950, inventoryModel * -1065714201, 0);
 		if (var5 == null) {
 			return null;
 		} else {
@@ -301,11 +301,11 @@ public class ItemDef extends CacheableEntry {
 			return true;
 		} else {
 			boolean var5 = true;
-			if (!Class79.aIndexDescriptor_950.method1221(var3, 0, 183776178)) {
+			if (!MorePacketEncode.aIndexDescriptor_950.method1221(var3, 0, 183776178)) {
 				var5 = false;
 			}
 
-			if (var4 != -1 && !Class79.aIndexDescriptor_950.method1221(var4, 0, 913249120)) {
+			if (var4 != -1 && !MorePacketEncode.aIndexDescriptor_950.method1221(var4, 0, 913249120)) {
 				var5 = false;
 			}
 
@@ -326,11 +326,11 @@ public class ItemDef extends CacheableEntry {
 		if (var3 == -1) {
 			return null;
 		} else {
-			CacheableEntry_Sub23_Sub16_Sub6 var8 = CacheableEntry_Sub23_Sub16_Sub6.method3283(Class79.aIndexDescriptor_950, var3, 0);
+			CacheableEntry_Sub23_Sub16_Sub6 var8 = CacheableEntry_Sub23_Sub16_Sub6.method3283(MorePacketEncode.aIndexDescriptor_950, var3, 0);
 			if (var6 != -1) {
-				CacheableEntry_Sub23_Sub16_Sub6 var4 = CacheableEntry_Sub23_Sub16_Sub6.method3283(Class79.aIndexDescriptor_950, var6, 0);
+				CacheableEntry_Sub23_Sub16_Sub6 var4 = CacheableEntry_Sub23_Sub16_Sub6.method3283(MorePacketEncode.aIndexDescriptor_950, var6, 0);
 				if (var5 != -1) {
-					CacheableEntry_Sub23_Sub16_Sub6 var7 = CacheableEntry_Sub23_Sub16_Sub6.method3283(Class79.aIndexDescriptor_950, var5, 0);
+					CacheableEntry_Sub23_Sub16_Sub6 var7 = CacheableEntry_Sub23_Sub16_Sub6.method3283(MorePacketEncode.aIndexDescriptor_950, var5, 0);
 					CacheableEntry_Sub23_Sub16_Sub6[] var9 = new CacheableEntry_Sub23_Sub16_Sub6[]{var8, var4, var7};
 					var8 = new CacheableEntry_Sub23_Sub16_Sub6(var9, 3);
 				} else {
@@ -375,9 +375,9 @@ public class ItemDef extends CacheableEntry {
 		if (var3 == -1) {
 			return null;
 		} else {
-			CacheableEntry_Sub23_Sub16_Sub6 var6 = CacheableEntry_Sub23_Sub16_Sub6.method3283(Class79.aIndexDescriptor_950, var3, 0);
+			CacheableEntry_Sub23_Sub16_Sub6 var6 = CacheableEntry_Sub23_Sub16_Sub6.method3283(MorePacketEncode.aIndexDescriptor_950, var3, 0);
 			if (var7 != -1) {
-				CacheableEntry_Sub23_Sub16_Sub6 var4 = CacheableEntry_Sub23_Sub16_Sub6.method3283(Class79.aIndexDescriptor_950, var7, 0);
+				CacheableEntry_Sub23_Sub16_Sub6 var4 = CacheableEntry_Sub23_Sub16_Sub6.method3283(MorePacketEncode.aIndexDescriptor_950, var7, 0);
 				CacheableEntry_Sub23_Sub16_Sub6[] var5 = new CacheableEntry_Sub23_Sub16_Sub6[]{var6, var4};
 				var6 = new CacheableEntry_Sub23_Sub16_Sub6(var5, 2);
 			}
@@ -418,7 +418,7 @@ public class ItemDef extends CacheableEntry {
 		if (var6 != null) {
 			return var6;
 		} else {
-			CacheableEntry_Sub23_Sub16_Sub6 var7 = CacheableEntry_Sub23_Sub16_Sub6.method3283(Class79.aIndexDescriptor_950, inventoryModel * -1065714201, 0);
+			CacheableEntry_Sub23_Sub16_Sub6 var7 = CacheableEntry_Sub23_Sub16_Sub6.method3283(MorePacketEncode.aIndexDescriptor_950, inventoryModel * -1065714201, 0);
 			if (var7 == null) {
 				return null;
 			} else {
@@ -513,15 +513,15 @@ public class ItemDef extends CacheableEntry {
 			return true;
 		} else {
 			boolean var5 = true;
-			if (!Class79.aIndexDescriptor_950.method1221(var3, 0, 839387507)) {
+			if (!MorePacketEncode.aIndexDescriptor_950.method1221(var3, 0, 839387507)) {
 				var5 = false;
 			}
 
-			if (var4 != -1 && !Class79.aIndexDescriptor_950.method1221(var4, 0, -1673125648)) {
+			if (var4 != -1 && !MorePacketEncode.aIndexDescriptor_950.method1221(var4, 0, -1673125648)) {
 				var5 = false;
 			}
 
-			if (var6 != -1 && !Class79.aIndexDescriptor_950.method1221(var6, 0, -180792512)) {
+			if (var6 != -1 && !MorePacketEncode.aIndexDescriptor_950.method1221(var6, 0, -180792512)) {
 				var5 = false;
 			}
 

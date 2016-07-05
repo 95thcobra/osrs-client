@@ -17,6 +17,8 @@ public final class PacketEncoder {
 		if (var2 >= 2000) {
 			var2 -= 2000;
 		}
+		
+		System.out.println("VAR2:" + var2);
 
 		if (var2 == 4) {
 			GameClient.anInt2970 = var6 * 1315483603;
@@ -134,7 +136,7 @@ public final class PacketEncoder {
 			GameClient.anInt2971 = var7 * -613726713;
 			GameClient.anInt2973 = -1136925898;
 			GameClient.anInt2972 = 0;
-			GameClient.secureBuffer.writeOpcode(213);
+			GameClient.secureBuffer.writeOpcode(213); // Examine object
 			GameClient.secureBuffer.writeShortLE(var3 >> 14 & 32767);
 		}
 
@@ -475,11 +477,16 @@ public final class PacketEncoder {
 						GameClient.anInt2972 = 0;
 						GameClient.mapMarkerX = var0 * -2075522063;
 						GameClient.mapMarkerZ = var1 * -700155223;
-						GameClient.secureBuffer.writeOpcode(40);
+						GameClient.secureBuffer.writeOpcode(40); // Spell on npc
 						GameClient.secureBuffer.writeShortLE(GameClient.anInt2881 * -1911127929);
 						GameClient.secureBuffer.writeIntV1(Class63.anInt799 * -464823961);
 						GameClient.secureBuffer.writeByte(Class65.aBoolArray820[82] ? 1 : 0);
 						GameClient.secureBuffer.writeShortA(var3);
+
+						System.out.println("SPELLONNPC1:" + GameClient.anInt2881 * -1911127929);
+						System.out.println("SPELLONNPC2:" + Class63.anInt799 * -464823961);
+						System.out.println("SPELLONNPC3:" + Class63.anInt799 * -464823961);
+						System.out.println("SPELLONNPC4:" + var3);
 					}
 				}
 
@@ -596,7 +603,7 @@ public final class PacketEncoder {
 					Class71.aInterfaceDef_862 = Class50.method713(var1, (byte) -43);
 					GameClient.anInt2975 = var0 * -1530235251;
 				}
-
+				
 				if (var2 == 50) {
 					var9 = GameClient.aClass109_Sub23_Sub16_Sub2_Sub2Array2983[var3];
 					if (var9 != null) {
@@ -663,11 +670,17 @@ public final class PacketEncoder {
 						GameClient.anInt2972 = 0;
 						GameClient.mapMarkerX = var0 * -2075522063;
 						GameClient.mapMarkerZ = var1 * -700155223;
-						GameClient.secureBuffer.writeOpcode(110);
+						GameClient.secureBuffer.writeOpcode(110); // Spell on
+																	// player
 						GameClient.secureBuffer.writeShort(GameClient.anInt2881 * -1911127929);
 						GameClient.secureBuffer.writeShortLE(var3);
 						GameClient.secureBuffer.writeIntV1(Class63.anInt799 * -464823961);
 						GameClient.secureBuffer.writeByte(Class65.aBoolArray820[82] ? 1 : 0);
+
+						System.out.println("SPELL ON PLAYER 1:" + GameClient.anInt2881 * -1911127929);
+						System.out.println("SPELL ON PLAYER 2:" + var3);
+						System.out.println("SPELL ON PLAYER 3:" + Class63.anInt799 * -464823961);
+						System.out.println("SPELL ON PLAYER 4:" + (Class65.aBoolArray820[82] ? 1 : 0));
 					}
 				}
 
@@ -1008,29 +1021,29 @@ public final class PacketEncoder {
 
 	static void method922(CacheableEntry_Sub23_Sub14_Sub4_Sub1 var0, CacheableEntry_Sub23_Sub14_Sub4_Sub1 var1, CacheableEntry_Sub23_Sub14_Sub4_Sub1 var2, boolean var3, byte var4) {
 		if (var3) {
-			Class3.anInt42 = (Class5.anInt98 * 2104430923 - GameClient.anInt3082 * 1386143757) / 2 * -1646540671;
-			Class3.anInt47 = Class3.anInt42 * -2012744469 - 1809848210;
+			NpcFlags.anInt42 = (Class5.anInt98 * 2104430923 - GameClient.anInt3082 * 1386143757) / 2 * -1646540671;
+			NpcFlags.anInt47 = NpcFlags.anInt42 * -2012744469 - 1809848210;
 		}
 
-		if (Class3.aBool69) {
+		if (NpcFlags.aBool69) {
 			Class30.method409(var0, var1, (byte) 20);
 		} else {
 			if (var3) {
-				Class134.aClass109_Sub23_Sub14_Sub2_1599.method2995(Class3.anInt42 * -468945023, 0);
-				Class3.aClass109_Sub23_Sub14_Sub2_45.method2995(382 + Class3.anInt42 * -468945023, 0);
-				Class106.aClass109_Sub23_Sub14_Sub1_1475.method2972(382 + Class3.anInt42 * -468945023 - Class106.aClass109_Sub23_Sub14_Sub1_1475.anInt2585 / 2, 18);
+				Class134.aClass109_Sub23_Sub14_Sub2_1599.method2995(NpcFlags.anInt42 * -468945023, 0);
+				NpcFlags.aClass109_Sub23_Sub14_Sub2_45.method2995(382 + NpcFlags.anInt42 * -468945023, 0);
+				Class106.aClass109_Sub23_Sub14_Sub1_1475.method2972(382 + NpcFlags.anInt42 * -468945023 - Class106.aClass109_Sub23_Sub14_Sub1_1475.anInt2585 / 2, 18);
 			}
 
 			int var6;
 			if (GameClient.anInt2868 * -684224463 == 0 || GameClient.anInt2868 * -684224463 == 5) {
 				byte var5 = 20;
-				var0.method3381(Class90.aString1081, Class3.anInt47 * 23501379 + 180, 245 - var5, 16777215, -1);
+				var0.method3381(Class90.aString1081, NpcFlags.anInt47 * 23501379 + 180, 245 - var5, 16777215, -1);
 				var6 = 253 - var5;
-				CacheableEntry_Sub23_Sub14.method2720(180 + Class3.anInt47 * 23501379 - 152, var6, 304, 34, 9179409);
-				CacheableEntry_Sub23_Sub14.method2720(180 + Class3.anInt47 * 23501379 - 151, var6 + 1, 302, 32, 0);
-				CacheableEntry_Sub23_Sub14.method2718(180 + Class3.anInt47 * 23501379 - 150, 2 + var6, Class3.anInt66 * -2136314695, 30, 9179409);
-				CacheableEntry_Sub23_Sub14.method2718(Class3.anInt47 * 23501379 + 180 - 150 + Class3.anInt66 * -2136314695, var6 + 2, 300 - Class3.anInt66 * -2136314695, 30, 0);
-				var0.method3381(Class3.aString56, 180 + Class3.anInt47 * 23501379, 276 - var5, 16777215, -1);
+				CacheableEntry_Sub23_Sub14.method2720(180 + NpcFlags.anInt47 * 23501379 - 152, var6, 304, 34, 9179409);
+				CacheableEntry_Sub23_Sub14.method2720(180 + NpcFlags.anInt47 * 23501379 - 151, var6 + 1, 302, 32, 0);
+				CacheableEntry_Sub23_Sub14.method2718(180 + NpcFlags.anInt47 * 23501379 - 150, 2 + var6, NpcFlags.anInt66 * -2136314695, 30, 9179409);
+				CacheableEntry_Sub23_Sub14.method2718(NpcFlags.anInt47 * 23501379 + 180 - 150 + NpcFlags.anInt66 * -2136314695, var6 + 2, 300 - NpcFlags.anInt66 * -2136314695, 30, 0);
+				var0.method3381(NpcFlags.aString56, 180 + NpcFlags.anInt47 * 23501379, 276 - var5, 16777215, -1);
 			}
 
 			String var7;
@@ -1044,27 +1057,27 @@ public final class PacketEncoder {
 			int var18;
 			short var19;
 			if (GameClient.anInt2868 * -684224463 == 20) {
-				Class3.aClass109_Sub23_Sub14_Sub1_43.method2972(Class3.anInt47 * 23501379 + 180 - Class3.aClass109_Sub23_Sub14_Sub1_43.anInt2585 / 2, 271 - Class3.aClass109_Sub23_Sub14_Sub1_43.anInt2582 / 2);
+				NpcFlags.aClass109_Sub23_Sub14_Sub1_43.method2972(NpcFlags.anInt47 * 23501379 + 180 - NpcFlags.aClass109_Sub23_Sub14_Sub1_43.anInt2585 / 2, 271 - NpcFlags.aClass109_Sub23_Sub14_Sub1_43.anInt2582 / 2);
 				var17 = 211;
-				var0.method3381(Class3.aString58, 180 + Class3.anInt47 * 23501379, var17, 16776960, 0);
+				var0.method3381(NpcFlags.aString58, 180 + NpcFlags.anInt47 * 23501379, var17, 16776960, 0);
 				var18 = var17 + 15;
-				var0.method3381(Class3.aString59, 180 + Class3.anInt47 * 23501379, var18, 16776960, 0);
+				var0.method3381(NpcFlags.aString59, 180 + NpcFlags.anInt47 * 23501379, var18, 16776960, 0);
 				var18 += 15;
-				var0.method3381(Class3.aString60, Class3.anInt47 * 23501379 + 180, var18, 16776960, 0);
+				var0.method3381(NpcFlags.aString60, NpcFlags.anInt47 * 23501379 + 180, var18, 16776960, 0);
 				var18 += 15;
 				var18 += 10;
-				if (Class3.anInt57 * -1261736495 != 4) {
-					var0.method3316(Class90.aString1071, 180 + Class3.anInt47 * 23501379 - 110, var18, 16777215, 0);
+				if (NpcFlags.anInt57 * -1261736495 != 4) {
+					var0.method3316(Class90.aString1071, 180 + NpcFlags.anInt47 * 23501379 - 110, var18, 16777215, 0);
 					var19 = 200;
 
-					for (var7 = Class3.aString55; var0.method3311(var7) > var19; var7 = var7.substring(0, var7.length() - 1)) {
+					for (var7 = NpcFlags.aString55; var0.method3311(var7) > var19; var7 = var7.substring(0, var7.length() - 1)) {
 						;
 					}
 
-					var0.method3316(CacheableEntry_Sub23_Sub14_Sub4.method3315(var7), Class3.anInt47 * 23501379 + 180 - 70, var18, 16777215, 0);
+					var0.method3316(CacheableEntry_Sub23_Sub14_Sub4.method3315(var7), NpcFlags.anInt47 * 23501379 + 180 - 70, var18, 16777215, 0);
 					var18 += 15;
 					var9 = Class90.aString1077;
-					var10 = Class3.password;
+					var10 = NpcFlags.password;
 					var11 = var10.length();
 					var12 = new char[var11];
 
@@ -1073,7 +1086,7 @@ public final class PacketEncoder {
 					}
 
 					var14 = new String(var12);
-					var0.method3316(var9 + var14, 180 + Class3.anInt47 * 23501379 - 108, var18, 16777215, 0);
+					var0.method3316(var9 + var14, 180 + NpcFlags.anInt47 * 23501379 - 108, var18, 16777215, 0);
 					var18 += 15;
 				}
 			}
@@ -1083,55 +1096,55 @@ public final class PacketEncoder {
 			int var30;
 			int var32;
 			if (GameClient.anInt2868 * -684224463 == 10 || GameClient.anInt2868 * -684224463 == 11) {
-				Class3.aClass109_Sub23_Sub14_Sub1_43.method2972(Class3.anInt47 * 23501379, 171);
+				NpcFlags.aClass109_Sub23_Sub14_Sub1_43.method2972(NpcFlags.anInt47 * 23501379, 171);
 				short var20;
-				if (Class3.anInt57 * -1261736495 == 0) {
+				if (NpcFlags.anInt57 * -1261736495 == 0) {
 					var17 = 251;
-					var0.method3381(Class90.aString1288, 180 + Class3.anInt47 * 23501379, var17, 16776960, 0);
+					var0.method3381(Class90.aString1288, 180 + NpcFlags.anInt47 * 23501379, var17, 16776960, 0);
 					var18 = var17 + 30;
-					var6 = Class3.anInt47 * 23501379 + 180 - 80;
+					var6 = NpcFlags.anInt47 * 23501379 + 180 - 80;
 					var20 = 291;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
 					var0.method3346(Class90.aString1289, var6 - 73, var20 - 20, 144, 40, 16777215, 0, 1, 1, 0);
-					var6 = Class3.anInt47 * 23501379 + 180 + 80;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
+					var6 = NpcFlags.anInt47 * 23501379 + 180 + 80;
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
 					var0.method3346(Class90.aString1327, var6 - 73, var20 - 20, 144, 40, 16777215, 0, 1, 1, 0);
-				} else if (Class3.anInt57 * -1261736495 == 1) {
-					var0.method3381(Class90.aString1236, Class3.anInt47 * 23501379 + 180, 211, 16776960, 0);
+				} else if (NpcFlags.anInt57 * -1261736495 == 1) {
+					var0.method3381(Class90.aString1236, NpcFlags.anInt47 * 23501379 + 180, 211, 16776960, 0);
 					var17 = 236;
-					var0.method3381(Class3.aString58, Class3.anInt47 * 23501379 + 180, var17, 16777215, 0);
+					var0.method3381(NpcFlags.aString58, NpcFlags.anInt47 * 23501379 + 180, var17, 16777215, 0);
 					var18 = var17 + 15;
-					var0.method3381(Class3.aString59, Class3.anInt47 * 23501379 + 180, var18, 16777215, 0);
+					var0.method3381(NpcFlags.aString59, NpcFlags.anInt47 * 23501379 + 180, var18, 16777215, 0);
 					var18 += 15;
-					var0.method3381(Class3.aString60, 180 + Class3.anInt47 * 23501379, var18, 16777215, 0);
+					var0.method3381(NpcFlags.aString60, 180 + NpcFlags.anInt47 * 23501379, var18, 16777215, 0);
 					var18 += 15;
-					var6 = Class3.anInt47 * 23501379 + 180 - 80;
+					var6 = NpcFlags.anInt47 * 23501379 + 180 - 80;
 					var20 = 321;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
 					var0.method3381(Class90.aString1061, var6, var20 + 5, 16777215, 0);
-					var6 = 80 + Class3.anInt47 * 23501379 + 180;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
+					var6 = 80 + NpcFlags.anInt47 * 23501379 + 180;
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
 					var0.method3381(Class90.aString1245, var6, 5 + var20, 16777215, 0);
-				} else if (Class3.anInt57 * -1261736495 == 2) {
+				} else if (NpcFlags.anInt57 * -1261736495 == 2) {
 					var17 = 211;
-					var0.method3381(Class3.aString58, 180 + Class3.anInt47 * 23501379, var17, 16776960, 0);
+					var0.method3381(NpcFlags.aString58, 180 + NpcFlags.anInt47 * 23501379, var17, 16776960, 0);
 					var18 = var17 + 15;
-					var0.method3381(Class3.aString59, Class3.anInt47 * 23501379 + 180, var18, 16776960, 0);
+					var0.method3381(NpcFlags.aString59, NpcFlags.anInt47 * 23501379 + 180, var18, 16776960, 0);
 					var18 += 15;
-					var0.method3381(Class3.aString60, 180 + Class3.anInt47 * 23501379, var18, 16776960, 0);
+					var0.method3381(NpcFlags.aString60, 180 + NpcFlags.anInt47 * 23501379, var18, 16776960, 0);
 					var18 += 15;
 					var18 += 10;
-					var0.method3316(Class90.aString1071, 180 + Class3.anInt47 * 23501379 - 110, var18, 16777215, 0);
+					var0.method3316(Class90.aString1071, 180 + NpcFlags.anInt47 * 23501379 - 110, var18, 16777215, 0);
 					var19 = 200;
 
-					for (var7 = Class3.aString55; var0.method3311(var7) > var19; var7 = var7.substring(1)) {
+					for (var7 = NpcFlags.aString55; var0.method3311(var7) > var19; var7 = var7.substring(1)) {
 						;
 					}
 
-					var0.method3316(CacheableEntry_Sub23_Sub14_Sub4.method3315(var7) + (Class3.anInt65 * -763095547 == 0 & GameClient.cycle * 1026470457 % 40 < 20 ? Class22.hexColTag(16776960) + Class37.PIPE : ""), 180 + Class3.anInt47 * 23501379 - 70, var18, 16777215, 0);
+					var0.method3316(CacheableEntry_Sub23_Sub14_Sub4.method3315(var7) + (NpcFlags.anInt65 * -763095547 == 0 & GameClient.cycle * 1026470457 % 40 < 20 ? Class22.hexColTag(16776960) + Class37.PIPE : ""), 180 + NpcFlags.anInt47 * 23501379 - 70, var18, 16777215, 0);
 					var18 += 15;
 					var9 = Class90.aString1077;
-					var10 = Class3.password;
+					var10 = NpcFlags.password;
 					var11 = var10.length();
 					var12 = new char[var11];
 
@@ -1140,25 +1153,25 @@ public final class PacketEncoder {
 					}
 
 					var14 = new String(var12);
-					var0.method3316(var9 + var14 + (Class3.anInt65 * -763095547 == 1 & GameClient.cycle * 1026470457 % 40 < 20 ? Class22.hexColTag(16776960) + Class37.PIPE : ""), 180 + Class3.anInt47 * 23501379 - 108, var18, 16777215, 0);
+					var0.method3316(var9 + var14 + (NpcFlags.anInt65 * -763095547 == 1 & GameClient.cycle * 1026470457 % 40 < 20 ? Class22.hexColTag(16776960) + Class37.PIPE : ""), 180 + NpcFlags.anInt47 * 23501379 - 108, var18, 16777215, 0);
 					var18 += 15;
-					var30 = 180 + Class3.anInt47 * 23501379 - 80;
+					var30 = 180 + NpcFlags.anInt47 * 23501379 - 80;
 					short var26 = 321;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var30 - 73, var26 - 20);
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var30 - 73, var26 - 20);
 					var0.method3381(Class90.aString1198, var30, 5 + var26, 16777215, 0);
-					var30 = 80 + Class3.anInt47 * 23501379 + 180;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var30 - 73, var26 - 20);
+					var30 = 80 + NpcFlags.anInt47 * 23501379 + 180;
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var30 - 73, var26 - 20);
 					var0.method3381(Class90.aString1245, var30, var26 + 5, 16777215, 0);
 					var17 = 357;
-					var1.method3381(Class90.aString1293, Class3.anInt47 * 23501379 + 180, var17, 16776960, 0);
-				} else if (Class3.anInt57 * -1261736495 == 4) {
-					var0.method3381(Class90.aString1295, Class3.anInt47 * 23501379 + 180, 211, 16776960, 0);
+					var1.method3381(Class90.aString1293, NpcFlags.anInt47 * 23501379 + 180, var17, 16776960, 0);
+				} else if (NpcFlags.anInt57 * -1261736495 == 4) {
+					var0.method3381(Class90.aString1295, NpcFlags.anInt47 * 23501379 + 180, 211, 16776960, 0);
 					var17 = 236;
-					var0.method3381(Class3.aString58, 180 + Class3.anInt47 * 23501379, var17, 16777215, 0);
+					var0.method3381(NpcFlags.aString58, 180 + NpcFlags.anInt47 * 23501379, var17, 16777215, 0);
 					var18 = var17 + 15;
-					var0.method3381(Class3.aString59, Class3.anInt47 * 23501379 + 180, var18, 16777215, 0);
+					var0.method3381(NpcFlags.aString59, NpcFlags.anInt47 * 23501379 + 180, var18, 16777215, 0);
 					var18 += 15;
-					var0.method3381(Class3.aString60, 180 + Class3.anInt47 * 23501379, var18, 16777215, 0);
+					var0.method3381(NpcFlags.aString60, 180 + NpcFlags.anInt47 * 23501379, var18, 16777215, 0);
 					var18 += 15;
 					var7 = Class90.aString1287;
 					var9 = Class126_Sub1.aString1646;
@@ -1170,95 +1183,95 @@ public final class PacketEncoder {
 					}
 
 					String var15 = new String(var31);
-					var0.method3316(var7 + var15 + (GameClient.cycle * 1026470457 % 40 < 20 ? Class22.hexColTag(16776960) + Class37.PIPE : ""), 180 + Class3.anInt47 * 23501379 - 108, var18, 16777215, 0);
+					var0.method3316(var7 + var15 + (GameClient.cycle * 1026470457 % 40 < 20 ? Class22.hexColTag(16776960) + Class37.PIPE : ""), 180 + NpcFlags.anInt47 * 23501379 - 108, var18, 16777215, 0);
 					var18 -= 8;
-					var0.method3316(Class90.aString1063, 180 + Class3.anInt47 * 23501379 - 9, var18, 16776960, 0);
+					var0.method3316(Class90.aString1063, 180 + NpcFlags.anInt47 * 23501379 - 9, var18, 16776960, 0);
 					var18 += 15;
-					var0.method3316(Class90.aString1064, Class3.anInt47 * 23501379 + 180 - 9, var18, 16776960, 0);
-					var32 = 180 + Class3.anInt47 * 23501379 - 9 + var0.method3311(Class90.aString1064) + 15;
+					var0.method3316(Class90.aString1064, NpcFlags.anInt47 * 23501379 + 180 - 9, var18, 16776960, 0);
+					var32 = 180 + NpcFlags.anInt47 * 23501379 - 9 + var0.method3311(Class90.aString1064) + 15;
 					var25 = var18 - var0.anInt2807;
 					CacheableEntry_Sub23_Sub14_Sub1 var33;
-					if (Class3.aBool75) {
+					if (NpcFlags.aBool75) {
 						var33 = Class42.aClass109_Sub23_Sub14_Sub1_605;
 					} else {
-						var33 = Class3.aClass109_Sub23_Sub14_Sub1_41;
+						var33 = NpcFlags.aClass109_Sub23_Sub14_Sub1_41;
 					}
 
 					var33.method2972(var32, var25);
 					var18 += 15;
-					var11 = 180 + Class3.anInt47 * 23501379 - 80;
+					var11 = 180 + NpcFlags.anInt47 * 23501379 - 80;
 					short var27 = 321;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var11 - 73, var27 - 20);
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var11 - 73, var27 - 20);
 					var0.method3381(Class90.aString1061, var11, 5 + var27, 16777215, 0);
-					var11 = Class3.anInt47 * 23501379 + 180 + 80;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var11 - 73, var27 - 20);
+					var11 = NpcFlags.anInt47 * 23501379 + 180 + 80;
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var11 - 73, var27 - 20);
 					var0.method3381(Class90.aString1245, var11, var27 + 5, 16777215, 0);
-					var1.method3381(Class90.aString1281, 180 + Class3.anInt47 * 23501379, var27 + 36, 255, 0);
-				} else if (Class3.anInt57 * -1261736495 == 5) {
-					var0.method3381(Class90.aString1294, 180 + Class3.anInt47 * 23501379, 201, 16776960, 0);
+					var1.method3381(Class90.aString1281, 180 + NpcFlags.anInt47 * 23501379, var27 + 36, 255, 0);
+				} else if (NpcFlags.anInt57 * -1261736495 == 5) {
+					var0.method3381(Class90.aString1294, 180 + NpcFlags.anInt47 * 23501379, 201, 16776960, 0);
 					var17 = 221;
-					var2.method3381(Class3.aString58, Class3.anInt47 * 23501379 + 180, var17, 16776960, 0);
+					var2.method3381(NpcFlags.aString58, NpcFlags.anInt47 * 23501379 + 180, var17, 16776960, 0);
 					var18 = var17 + 15;
-					var2.method3381(Class3.aString59, Class3.anInt47 * 23501379 + 180, var18, 16776960, 0);
+					var2.method3381(NpcFlags.aString59, NpcFlags.anInt47 * 23501379 + 180, var18, 16776960, 0);
 					var18 += 15;
-					var2.method3381(Class3.aString60, 180 + Class3.anInt47 * 23501379, var18, 16776960, 0);
+					var2.method3381(NpcFlags.aString60, 180 + NpcFlags.anInt47 * 23501379, var18, 16776960, 0);
 					var18 += 15;
 					var18 += 14;
-					var0.method3316(Class90.aString1299, Class3.anInt47 * 23501379 + 180 - 145, var18, 16777215, 0);
+					var0.method3316(Class90.aString1299, NpcFlags.anInt47 * 23501379 + 180 - 145, var18, 16777215, 0);
 					var19 = 174;
 
-					for (var7 = Class3.aString55; var0.method3311(var7) > var19; var7 = var7.substring(1)) {
+					for (var7 = NpcFlags.aString55; var0.method3311(var7) > var19; var7 = var7.substring(1)) {
 						;
 					}
 
-					var0.method3316(CacheableEntry_Sub23_Sub14_Sub4.method3315(var7) + (GameClient.cycle * 1026470457 % 40 < 20 ? Class22.hexColTag(16776960) + Class37.PIPE : ""), 180 + Class3.anInt47 * 23501379 - 34, var18, 16777215, 0);
+					var0.method3316(CacheableEntry_Sub23_Sub14_Sub4.method3315(var7) + (GameClient.cycle * 1026470457 % 40 < 20 ? Class22.hexColTag(16776960) + Class37.PIPE : ""), 180 + NpcFlags.anInt47 * 23501379 - 34, var18, 16777215, 0);
 					var18 += 15;
-					var8 = 180 + Class3.anInt47 * 23501379 - 80;
+					var8 = 180 + NpcFlags.anInt47 * 23501379 - 80;
 					short var21 = 321;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var8 - 73, var21 - 20);
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var8 - 73, var21 - 20);
 					var0.method3381(Class90.aString1296, var8, 5 + var21, 16777215, 0);
-					var8 = 180 + Class3.anInt47 * 23501379 + 80;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var8 - 73, var21 - 20);
+					var8 = 180 + NpcFlags.anInt47 * 23501379 + 80;
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var8 - 73, var21 - 20);
 					var0.method3381(Class90.aString1225, var8, 5 + var21, 16777215, 0);
-				} else if (Class3.anInt57 * -1261736495 == 6) {
+				} else if (NpcFlags.anInt57 * -1261736495 == 6) {
 					var17 = 211;
-					var0.method3381(Class3.aString58, Class3.anInt47 * 23501379 + 180, var17, 16776960, 0);
+					var0.method3381(NpcFlags.aString58, NpcFlags.anInt47 * 23501379 + 180, var17, 16776960, 0);
 					var18 = var17 + 15;
-					var0.method3381(Class3.aString59, Class3.anInt47 * 23501379 + 180, var18, 16776960, 0);
+					var0.method3381(NpcFlags.aString59, NpcFlags.anInt47 * 23501379 + 180, var18, 16776960, 0);
 					var18 += 15;
-					var0.method3381(Class3.aString60, 180 + Class3.anInt47 * 23501379, var18, 16776960, 0);
+					var0.method3381(NpcFlags.aString60, 180 + NpcFlags.anInt47 * 23501379, var18, 16776960, 0);
 					var18 += 15;
-					var6 = Class3.anInt47 * 23501379 + 180;
+					var6 = NpcFlags.anInt47 * 23501379 + 180;
 					var20 = 321;
-					Class3.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
+					NpcFlags.aClass109_Sub23_Sub14_Sub1_44.method2972(var6 - 73, var20 - 20);
 					var0.method3381(Class90.aString1225, var6, var20 + 5, 16777215, 0);
 				}
 			}
 
-			if (Class3.anInt53 * -2057645811 > 0) {
-				Class61.method819(Class3.anInt53 * -2057645811, 626868295);
-				Class3.anInt53 = 0;
+			if (NpcFlags.anInt53 * -2057645811 > 0) {
+				Class61.method819(NpcFlags.anInt53 * -2057645811, 626868295);
+				NpcFlags.anInt53 = 0;
 			}
 
 			var17 = 256;
-			if (Class3.anInt49 * 948700643 > 0) {
+			if (NpcFlags.anInt49 * 948700643 > 0) {
 				for (var6 = 0; var6 < 256; var6++) {
-					if (Class3.anInt49 * 948700643 > 768) {
-						Class60.anIntArray775[var6] = CacheableEntry_Sub23_Sub12.method2514(Class33.anIntArray430[var6], Class51.anIntArray706[var6], 1024 - Class3.anInt49 * 948700643, -2067546620);
-					} else if (Class3.anInt49 * 948700643 > 256) {
+					if (NpcFlags.anInt49 * 948700643 > 768) {
+						Class60.anIntArray775[var6] = CacheableEntry_Sub23_Sub12.method2514(Class33.anIntArray430[var6], Class51.anIntArray706[var6], 1024 - NpcFlags.anInt49 * 948700643, -2067546620);
+					} else if (NpcFlags.anInt49 * 948700643 > 256) {
 						Class60.anIntArray775[var6] = Class51.anIntArray706[var6];
 					} else {
-						Class60.anIntArray775[var6] = CacheableEntry_Sub23_Sub12.method2514(Class51.anIntArray706[var6], Class33.anIntArray430[var6], 256 - Class3.anInt49 * 948700643, -562867895);
+						Class60.anIntArray775[var6] = CacheableEntry_Sub23_Sub12.method2514(Class51.anIntArray706[var6], Class33.anIntArray430[var6], 256 - NpcFlags.anInt49 * 948700643, -562867895);
 					}
 				}
-			} else if (Class3.anInt50 * -476800185 > 0) {
+			} else if (NpcFlags.anInt50 * -476800185 > 0) {
 				for (var6 = 0; var6 < 256; var6++) {
-					if (Class3.anInt50 * -476800185 > 768) {
-						Class60.anIntArray775[var6] = CacheableEntry_Sub23_Sub12.method2514(Class33.anIntArray430[var6], Class42.anIntArray598[var6], 1024 - Class3.anInt50 * -476800185, -473723166);
-					} else if (Class3.anInt50 * -476800185 > 256) {
+					if (NpcFlags.anInt50 * -476800185 > 768) {
+						Class60.anIntArray775[var6] = CacheableEntry_Sub23_Sub12.method2514(Class33.anIntArray430[var6], Class42.anIntArray598[var6], 1024 - NpcFlags.anInt50 * -476800185, -473723166);
+					} else if (NpcFlags.anInt50 * -476800185 > 256) {
 						Class60.anIntArray775[var6] = Class42.anIntArray598[var6];
 					} else {
-						Class60.anIntArray775[var6] = CacheableEntry_Sub23_Sub12.method2514(Class42.anIntArray598[var6], Class33.anIntArray430[var6], 256 - Class3.anInt50 * -476800185, -1076935946);
+						Class60.anIntArray775[var6] = CacheableEntry_Sub23_Sub12.method2514(Class42.anIntArray598[var6], Class33.anIntArray430[var6], 256 - NpcFlags.anInt50 * -476800185, -1076935946);
 					}
 				}
 			} else {
@@ -1267,16 +1280,16 @@ public final class PacketEncoder {
 				}
 			}
 
-			CacheableEntry_Sub23_Sub14.method2771(Class3.anInt42 * -468945023, 9, 128 + Class3.anInt42 * -468945023, 7 + var17);
-			Class134.aClass109_Sub23_Sub14_Sub2_1599.method2995(Class3.anInt42 * -468945023, 0);
+			CacheableEntry_Sub23_Sub14.method2771(NpcFlags.anInt42 * -468945023, 9, 128 + NpcFlags.anInt42 * -468945023, 7 + var17);
+			Class134.aClass109_Sub23_Sub14_Sub2_1599.method2995(NpcFlags.anInt42 * -468945023, 0);
 			CacheableEntry_Sub23_Sub14.method2711();
 			var6 = 0;
-			int var23 = Class3.anInt42 * -468945023 + Class72.aClass7_871.anInt108 * -822155747;
+			int var23 = NpcFlags.anInt42 * -468945023 + Class72.aClass7_871.anInt108 * -822155747;
 
 			int var24;
 			int var28;
 			for (var8 = 1; var8 < var17 - 1; var8++) {
-				var24 = (var17 - var8) * Class3.anIntArray61[var8] / var17;
+				var24 = (var17 - var8) * NpcFlags.anIntArray61[var8] / var17;
 				var32 = 22 + var24;
 				if (var32 < 0) {
 					var32 = 0;
@@ -1300,14 +1313,14 @@ public final class PacketEncoder {
 				var23 += var32 + Class72.aClass7_871.anInt108 * -568569227 - 128;
 			}
 
-			CacheableEntry_Sub23_Sub14.method2771(Class3.anInt42 * -468945023 + 765 - 128, 9, 765 + Class3.anInt42 * -468945023, 7 + var17);
-			Class3.aClass109_Sub23_Sub14_Sub2_45.method2995(382 + Class3.anInt42 * -468945023, 0);
+			CacheableEntry_Sub23_Sub14.method2771(NpcFlags.anInt42 * -468945023 + 765 - 128, 9, 765 + NpcFlags.anInt42 * -468945023, 7 + var17);
+			NpcFlags.aClass109_Sub23_Sub14_Sub2_45.method2995(382 + NpcFlags.anInt42 * -468945023, 0);
 			CacheableEntry_Sub23_Sub14.method2711();
 			var6 = 0;
-			var23 = Class3.anInt42 * -468945023 + Class72.aClass7_871.anInt108 * -822155747 + 24 + 637;
+			var23 = NpcFlags.anInt42 * -468945023 + Class72.aClass7_871.anInt108 * -822155747 + 24 + 637;
 
 			for (var8 = 1; var8 < var17 - 1; var8++) {
-				var24 = (var17 - var8) * Class3.anIntArray61[var8] / var17;
+				var24 = (var17 - var8) * NpcFlags.anIntArray61[var8] / var17;
 				var32 = 103 - var24;
 				var23 += var24;
 
@@ -1328,10 +1341,10 @@ public final class PacketEncoder {
 				var23 += Class72.aClass7_871.anInt108 * -568569227 - var32 - var24;
 			}
 
-			Class118.aClass109_Sub23_Sub14_Sub1Array1537[Class15.aClass35_195.aBool473 ? 1 : 0].method2972(Class3.anInt42 * -468945023 + 765 - 40, 463);
+			Class118.aClass109_Sub23_Sub14_Sub1Array1537[Class15.aClass35_195.aBool473 ? 1 : 0].method2972(NpcFlags.anInt42 * -468945023 + 765 - 40, 463);
 			if (GameClient.anInt2868 * -684224463 > 5 && GameClient.anInt2865 * 1017874057 == 0) {
 				if (Class73.aClass109_Sub23_Sub14_Sub1_886 != null) {
-					var18 = Class3.anInt42 * -468945023 + 5;
+					var18 = NpcFlags.anInt42 * -468945023 + 5;
 					var19 = 463;
 					byte var29 = 100;
 					byte var22 = 35;

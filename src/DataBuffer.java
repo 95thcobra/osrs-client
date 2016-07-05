@@ -276,7 +276,7 @@ public class DataBuffer extends LinkedEntry {
 	}
 
 	public int method1890(int var1) {
-		int var3 = Class3.method114(data, var1, pos * 1736753585, 59142782);
+		int var3 = NpcFlags.method114(data, var1, pos * 1736753585, 59142782);
 		writeInt(var3);
 		return var3;
 	}
@@ -402,7 +402,7 @@ public class DataBuffer extends LinkedEntry {
 	}
 
 	public void doRsa(BigInteger exp, BigInteger mod) {
-		if (Loader.local)
+		if (Loader.DO_RSA_OR_SMTH)
 			return;
 		int start = pos * 1736753585;
 		pos = 0;
@@ -650,14 +650,14 @@ public class DataBuffer extends LinkedEntry {
 
 	public boolean method2086() {
 		pos -= 920886596;
-		int var3 = Class3.method114(data, 0, pos * 1736753585, 59142782);
+		int var3 = NpcFlags.method114(data, 0, pos * 1736753585, 59142782);
 		int var2 = readInt();
 		return var2 == var3;
 	}
 
 	public static void method2087(IndexDescriptor var0, IndexDescriptor var1, boolean var2, CacheableEntry_Sub23_Sub14_Sub4_Sub1 var3, byte var4) {
 		ItemDef.configIndex2 = var0;
-		Class79.aIndexDescriptor_950 = var1;
+		MorePacketEncode.aIndexDescriptor_950 = var1;
 		Class136.aBool1607 = var2;
 		ItemDef.anInt2111 = ItemDef.configIndex2.numFilesInContainer(10) * 1768098109;
 		LinkedEntry_Sub20.aClass109_Sub23_Sub14_Sub4_Sub1_2075 = var3;

@@ -54,8 +54,8 @@ public class Class30 {
 			Class108.aClass109_Sub23_Sub14_Sub2Array1511 = ScriptInvocation.method1838(Class18.aClass94_Sub1_217, "sl_back", "");
 		}
 
-		if (Class3.aClass109_Sub23_Sub14_Sub1Array64 == null) {
-			Class3.aClass109_Sub23_Sub14_Sub1Array64 = Class24.method359(Class18.aClass94_Sub1_217, "sl_flags", "", -1075208800);
+		if (NpcFlags.aClass109_Sub23_Sub14_Sub1Array64 == null) {
+			NpcFlags.aClass109_Sub23_Sub14_Sub1Array64 = Class24.method359(Class18.aClass94_Sub1_217, "sl_flags", "", -1075208800);
 		}
 
 		if (Class26.aClass109_Sub23_Sub14_Sub1Array329 == null) {
@@ -66,15 +66,15 @@ public class Class30 {
 			Class38.aClass109_Sub23_Sub14_Sub1Array511 = Class24.method359(Class18.aClass94_Sub1_217, "sl_stars", "", -1784743029);
 		}
 
-		CacheableEntry_Sub23_Sub14.method2718(Class3.anInt42 * -468945023, 23, 765, 480, 0);
-		CacheableEntry_Sub23_Sub14.method2719(Class3.anInt42 * -468945023, 0, 125, 23, 12425273, 9135624);
-		CacheableEntry_Sub23_Sub14.method2719(Class3.anInt42 * -468945023 + 125, 0, 640, 23, 5197647, 2697513);
-		var0.method3381(Class90.aString1319, Class3.anInt42 * -468945023 + 62, 15, 0, -1);
+		CacheableEntry_Sub23_Sub14.method2718(NpcFlags.anInt42 * -468945023, 23, 765, 480, 0);
+		CacheableEntry_Sub23_Sub14.method2719(NpcFlags.anInt42 * -468945023, 0, 125, 23, 12425273, 9135624);
+		CacheableEntry_Sub23_Sub14.method2719(NpcFlags.anInt42 * -468945023 + 125, 0, 640, 23, 5197647, 2697513);
+		var0.method3381(Class90.aString1319, NpcFlags.anInt42 * -468945023 + 62, 15, 0, -1);
 		if (Class38.aClass109_Sub23_Sub14_Sub1Array511 != null) {
-			Class38.aClass109_Sub23_Sub14_Sub1Array511[1].method2972(140 + Class3.anInt42 * -468945023, 1);
-			var1.method3316(Class90.aString1320, 152 + Class3.anInt42 * -468945023, 10, 16777215, -1);
-			Class38.aClass109_Sub23_Sub14_Sub1Array511[0].method2972(Class3.anInt42 * -468945023 + 140, 12);
-			var1.method3316(Class90.aString1321, Class3.anInt42 * -468945023 + 152, 21, 16777215, -1);
+			Class38.aClass109_Sub23_Sub14_Sub1Array511[1].method2972(140 + NpcFlags.anInt42 * -468945023, 1);
+			var1.method3316(Class90.aString1320, 152 + NpcFlags.anInt42 * -468945023, 10, 16777215, -1);
+			Class38.aClass109_Sub23_Sub14_Sub1Array511[0].method2972(NpcFlags.anInt42 * -468945023 + 140, 12);
+			var1.method3316(Class90.aString1321, NpcFlags.anInt42 * -468945023 + 152, 21, 16777215, -1);
 		}
 
 		int var3;
@@ -82,7 +82,7 @@ public class Class30 {
 		int var5;
 		int var6;
 		if (Class26.aClass109_Sub23_Sub14_Sub1Array329 != null) {
-			var3 = Class3.anInt42 * -468945023 + 280;
+			var3 = NpcFlags.anInt42 * -468945023 + 280;
 			if (Class51.anIntArray702[0] == 0 && Class51.anIntArray705[0] == 0) {
 				Class26.aClass109_Sub23_Sub14_Sub1Array329[2].method2972(var3, 4);
 			} else {
@@ -96,7 +96,7 @@ public class Class30 {
 			}
 
 			var0.method3316(Class90.aString1322, 32 + var3, 17, 16777215, -1);
-			var4 = 390 + Class3.anInt42 * -468945023;
+			var4 = 390 + NpcFlags.anInt42 * -468945023;
 			if (Class51.anIntArray702[0] == 1 && Class51.anIntArray705[0] == 0) {
 				Class26.aClass109_Sub23_Sub14_Sub1Array329[2].method2972(var4, 4);
 			} else {
@@ -110,7 +110,7 @@ public class Class30 {
 			}
 
 			var0.method3316(Class90.aString1323, 32 + var4, 17, 16777215, -1);
-			var5 = 500 + Class3.anInt42 * -468945023;
+			var5 = 500 + NpcFlags.anInt42 * -468945023;
 			if (Class51.anIntArray702[0] == 2 && Class51.anIntArray705[0] == 0) {
 				Class26.aClass109_Sub23_Sub14_Sub1Array329[2].method2972(var5, 4);
 			} else {
@@ -124,7 +124,7 @@ public class Class30 {
 			}
 
 			var0.method3316(Class90.aString1324, var5 + 32, 17, 16777215, -1);
-			var6 = Class3.anInt42 * -468945023 + 610;
+			var6 = NpcFlags.anInt42 * -468945023 + 610;
 			if (Class51.anIntArray702[0] == 3 && Class51.anIntArray705[0] == 0) {
 				Class26.aClass109_Sub23_Sub14_Sub1Array329[2].method2972(var6, 4);
 			} else {
@@ -140,8 +140,8 @@ public class Class30 {
 			var0.method3316(Class90.aString1125, 32 + var6, 17, 16777215, -1);
 		}
 
-		CacheableEntry_Sub23_Sub14.method2718(Class3.anInt42 * -468945023 + 708, 4, 50, 16, 0);
-		var1.method3381(Class90.aString1245, Class3.anInt42 * -468945023 + 708 + 25, 16, 16777215, -1);
+		CacheableEntry_Sub23_Sub14.method2718(NpcFlags.anInt42 * -468945023 + 708, 4, 50, 16, 0);
+		var1.method3381(Class90.aString1245, NpcFlags.anInt42 * -468945023 + 708 + 25, 16, 16777215, -1);
 		var3 = 0;
 		var4 = 33554432;
 		var5 = GameClient.anInt2860 * -456057453 & var4;
@@ -153,7 +153,7 @@ public class Class30 {
 			}
 		}
 
-		Class3.anInt70 = -806313189;
+		NpcFlags.anInt70 = -806313189;
 		if (Class108.aClass109_Sub23_Sub14_Sub2Array1511 != null) {
 			byte var24 = 88;
 			byte var25 = 19;
@@ -191,7 +191,7 @@ public class Class30 {
 			int var12 = (765 - var8 * var24 - var10 * (var8 - 1)) / 2;
 			int var13 = (480 - var25 * var9 - (var9 - 1) * var11) / 2;
 			int var14 = 23 + var13;
-			int var15 = var12 + Class3.anInt42 * -468945023;
+			int var15 = var12 + NpcFlags.anInt42 * -468945023;
 			int var16 = 0;
 			boolean var17 = false;
 
@@ -223,15 +223,15 @@ public class Class30 {
 					}
 
 					if (Class74.anInt897 * -1031552075 >= var15 && Class74.anInt898 * 1941423145 >= var14 && Class74.anInt897 * -1031552075 < var24 + var15 && Class74.anInt898 * 1941423145 < var14 + var25 && var20) {
-						Class3.anInt70 = var18 * 806313189;
+						NpcFlags.anInt70 = var18 * 806313189;
 						Class108.aClass109_Sub23_Sub14_Sub2Array1511[var22].method3001(var15, var14, 128, 16777215);
 						var17 = true;
 					} else {
 						Class108.aClass109_Sub23_Sub14_Sub2Array1511[var22].method2995(var15, var14);
 					}
 
-					if (Class3.aClass109_Sub23_Sub14_Sub1Array64 != null) {
-						Class3.aClass109_Sub23_Sub14_Sub1Array64[(var19.method715((byte) 16) ? 8 : 0) + var19.anInt710 * -1139554955].method2972(29 + var15, var14);
+					if (NpcFlags.aClass109_Sub23_Sub14_Sub1Array64 != null) {
+						NpcFlags.aClass109_Sub23_Sub14_Sub1Array64[(var19.method715((byte) 16) ? 8 : 0) + var19.anInt710 * -1139554955].method2972(29 + var15, var14);
 					}
 
 					var0.method3381(Integer.toString(var19.anInt703 * 1685233739), 15 + var15, 5 + var14 + var25 / 2, 0, -1);
@@ -247,11 +247,11 @@ public class Class30 {
 			}
 
 			if (var17) {
-				var18 = var1.method3311(Class4.aClass51Array80[Class3.anInt70 * 624623853].aString707) + 6;
+				var18 = var1.method3311(Class4.aClass51Array80[NpcFlags.anInt70 * 624623853].aString707) + 6;
 				int var27 = var1.anInt2807 + 8;
 				CacheableEntry_Sub23_Sub14.method2718(Class74.anInt897 * -1031552075 - var18 / 2, 5 + Class74.anInt898 * 1941423145 + 20, var18, var27, 16777120);
 				CacheableEntry_Sub23_Sub14.method2720(Class74.anInt897 * -1031552075 - var18 / 2, 20 + Class74.anInt898 * 1941423145 + 5, var18, var27, 0);
-				var1.method3381(Class4.aClass51Array80[Class3.anInt70 * 624623853].aString707, Class74.anInt897 * -1031552075, 4 + var1.anInt2807 + Class74.anInt898 * 1941423145 + 20 + 5, 0, -1);
+				var1.method3381(Class4.aClass51Array80[NpcFlags.anInt70 * 624623853].aString707, Class74.anInt897 * -1031552075, 4 + var1.anInt2807 + Class74.anInt898 * 1941423145 + 20 + 5, 0, -1);
 			}
 		}
 

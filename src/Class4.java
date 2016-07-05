@@ -23,7 +23,7 @@ public class Class4 {
 		CacheableEntry_Sub23_Sub16_Sub3 var34;
 		if (GameClient.incomingMessage * -2146869835 == 244) {
 			var2 = GameClient.gameBuffer.readUByteN();
-			var3 = Class79.mapPacketBaseX * -1886971203 + (var2 >> 4 & 7);
+			var3 = MorePacketEncode.mapPacketBaseX * -1886971203 + (var2 >> 4 & 7);
 			var4 = (var2 & 7) + ObjectDef.mapPacketBaseZ * 616951789;
 			var5 = GameClient.gameBuffer.readUShortA();
 			if (var3 >= 0 && var4 >= 0 && var3 < 104 && var4 < 104) {
@@ -49,7 +49,7 @@ public class Class4 {
 			int var10;
 			if (GameClient.incomingMessage * -2146869835 == 113) {
 				var2 = GameClient.gameBuffer.readUByte();
-				var3 = Class79.mapPacketBaseX * -1886971203 + (var2 >> 4 & 7);
+				var3 = MorePacketEncode.mapPacketBaseX * -1886971203 + (var2 >> 4 & 7);
 				var4 = (var2 & 7) + ObjectDef.mapPacketBaseZ * 616951789;
 				var5 = GameClient.gameBuffer.readUShort();
 				var7 = GameClient.gameBuffer.readUShort();
@@ -72,7 +72,7 @@ public class Class4 {
 				int var1;
 				if (GameClient.incomingMessage * -2146869835 == 186) { // remov obj?
 					int pos = GameClient.gameBuffer.readUByte();
-					int x = (pos >> 4 & 7) + Class79.mapPacketBaseX * -1886971203;
+					int x = (pos >> 4 & 7) + MorePacketEncode.mapPacketBaseX * -1886971203;
 					int z = (pos & 7) + ObjectDef.mapPacketBaseZ * 616951789;
 					int info = GameClient.gameBuffer.readUByte();
 					int type = info >> 2;
@@ -89,7 +89,7 @@ public class Class4 {
 						int rot = settings & 3;
 						int typeidx = GameClient.objIdxTypes[type];
 						int pos = GameClient.gameBuffer.readUByteS();
-						int x = (pos >> 4 & 7) + Class79.mapPacketBaseX * -1886971203;
+						int x = (pos >> 4 & 7) + MorePacketEncode.mapPacketBaseX * -1886971203;
 						int z = ObjectDef.mapPacketBaseZ * 616951789 + (pos & 7);
 						int id = GameClient.gameBuffer.readUShortA();
 						if (x >= 0 && z >= 0 && x < 104 && z < 104) {
@@ -102,8 +102,8 @@ public class Class4 {
 						int var20;
 						if (GameClient.incomingMessage * -2146869835 == 101) {
 							int lochash = GameClient.gameBuffer.readUByte();
-							System.out.printf("Map bases at %d and %d%n", Class79.mapPacketBaseX * -1886971203, ObjectDef.mapPacketBaseZ * 616951789);
-							int dx = (lochash >> 4 & 7) + Class79.mapPacketBaseX * -1886971203;
+							System.out.printf("Map bases at %d and %d%n", MorePacketEncode.mapPacketBaseX * -1886971203, ObjectDef.mapPacketBaseZ * 616951789);
+							int dx = (lochash >> 4 & 7) + MorePacketEncode.mapPacketBaseX * -1886971203;
 							int dz = (lochash & 7) + ObjectDef.mapPacketBaseZ * 616951789;
 							int tx = dx + GameClient.gameBuffer.readByte();
 							int tz = dz + GameClient.gameBuffer.readByte();
@@ -136,7 +136,7 @@ public class Class4 {
 								var7 = GameClient.objIdxTypes[var4];
 								var10 = GameClient.gameBuffer.readUShortLEA();
 								var1 = GameClient.gameBuffer.readUByte();
-								var6 = (var1 >> 4 & 7) + Class79.mapPacketBaseX * -1886971203;
+								var6 = (var1 >> 4 & 7) + MorePacketEncode.mapPacketBaseX * -1886971203;
 								var14 = ObjectDef.mapPacketBaseZ * 616951789 + (var1 & 7);
 								var15 = GameClient.gameBuffer.readULEShort();
 								byte var18 = GameClient.gameBuffer.method1898();
@@ -203,7 +203,7 @@ public class Class4 {
 
 							if (GameClient.incomingMessage * -2146869835 == 160) {
 								var2 = GameClient.gameBuffer.readUByte();
-								var3 = Class79.mapPacketBaseX * -1886971203 + (var2 >> 4 & 7);
+								var3 = MorePacketEncode.mapPacketBaseX * -1886971203 + (var2 >> 4 & 7);
 								var4 = (var2 & 7) + ObjectDef.mapPacketBaseZ * 616951789;
 								var5 = GameClient.gameBuffer.readUShort();
 								var7 = GameClient.gameBuffer.readUByte();
@@ -226,7 +226,7 @@ public class Class4 {
 							if (GameClient.incomingMessage * -2146869835 == 145) {
 								int itemId = GameClient.gameBuffer.readUShortLEA();
 								int pos = GameClient.gameBuffer.readUByteA();
-								int x = Class79.mapPacketBaseX * -1886971203 + (pos >> 4 & 7);
+								int x = MorePacketEncode.mapPacketBaseX * -1886971203 + (pos >> 4 & 7);
 								int y = ObjectDef.mapPacketBaseZ * 616951789 + (pos & 7);
 								int amt = GameClient.gameBuffer.readULEShort();
 								if (x >= 0 && y >= 0 && x < 104 && y < 104) {
@@ -244,7 +244,7 @@ public class Class4 {
 							} else if (GameClient.incomingMessage * -2146869835 != 95) {
 								if (GameClient.incomingMessage * -2146869835 == 197) {
 									int tile = GameClient.gameBuffer.readUByte();
-									int x = Class79.mapPacketBaseX * -1886971203 + (tile >> 4 & 7);
+									int x = MorePacketEncode.mapPacketBaseX * -1886971203 + (tile >> 4 & 7);
 									int z = ObjectDef.mapPacketBaseZ * 616951789 + (tile & 7);
 									int id = GameClient.gameBuffer.readUShort();
 									int height = GameClient.gameBuffer.readUByte();
@@ -263,7 +263,7 @@ public class Class4 {
 								var4 = var2 & 3;
 								var5 = GameClient.objIdxTypes[var3];
 								var7 = GameClient.gameBuffer.readUByteA();
-								var10 = Class79.mapPacketBaseX * -1886971203 + (var7 >> 4 & 7);
+								var10 = MorePacketEncode.mapPacketBaseX * -1886971203 + (var7 >> 4 & 7);
 								var1 = ObjectDef.mapPacketBaseZ * 616951789 + (var7 & 7);
 								var6 = GameClient.gameBuffer.readUShort();
 								if (var10 >= 0 && var1 >= 0 && var10 < 103 && var1 < 103) {

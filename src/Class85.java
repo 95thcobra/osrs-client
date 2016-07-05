@@ -32,7 +32,7 @@ public class Class85 implements Interface3 {
 						ScriptInvocation var2 = new ScriptInvocation();
 						var2.inter = var3;
 						var2.parameters = var3.anObjectArray2018;
-						Class79.method1034(var2, 2000000, (byte) 21);
+						MorePacketEncode.method1034(var2, 2000000, (byte) 21);
 					}
 				}
 

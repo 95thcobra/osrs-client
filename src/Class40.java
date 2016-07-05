@@ -119,33 +119,34 @@ public class Class40 {
 			int var2;
 			int var3;
 			if (GameClient.loginStage * 638704689 == 5) {
-				int[] seed = new int[]{(int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D)};
+				int[] seed = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D) };
 				GameClient.secureBuffer.pos = 0;
 				GameClient.secureBuffer.writeByte(1);
-				GameClient.secureBuffer.writeByte(Class3.aClass85_68.method34(-914243711));
+				GameClient.secureBuffer.writeByte(NpcFlags.aClass85_68.method34(-914243711));
 				GameClient.secureBuffer.writeInt(seed[0]);
 				GameClient.secureBuffer.writeInt(seed[1]);
 				GameClient.secureBuffer.writeInt(seed[2]);
 				GameClient.secureBuffer.writeInt(seed[3]);
 
-				switch (Class3.aClass85_68.anInt1008 * 1595593885) {
-					case 0:
-						GameClient.secureBuffer.writeInt((Integer) Class15.aClass35_195.aLinkedHashMap475.get(Integer.valueOf(CacheableEntry_Sub23_Sub19.method2828(Class3.aString55))));
-						GameClient.secureBuffer.pos += 920886596; // 4
-						break;
-					case 1:
-						GameClient.secureBuffer.pos += 1841773192; // 8
-						break;
-					case 2:
-					case 3:
-						GameClient.secureBuffer.writeTriByte(Class107.anInt1499 * 1582697257);
-						GameClient.secureBuffer.pos -= 2070117227; // 5
+				switch (NpcFlags.aClass85_68.anInt1008 * 1595593885) {
+				case 0:
+					GameClient.secureBuffer.writeInt((Integer) Class15.aClass35_195.aLinkedHashMap475.get(Integer.valueOf(CacheableEntry_Sub23_Sub19.method2828(NpcFlags.aString55))));
+					GameClient.secureBuffer.pos += 920886596; // 4
+					break;
+				case 1:
+					GameClient.secureBuffer.pos += 1841773192; // 8
+					break;
+				case 2:
+				case 3:
+					GameClient.secureBuffer.writeTriByte(Class107.anInt1499 * 1582697257);
+					GameClient.secureBuffer.pos -= 2070117227; // 5
 				}
 
-				int a = 1841773192  * 1736753585;
-				System.out.println(" IT IS " + a);
+				int a = 1841773192 * 1736753585;
+				if (Loader.DEBUG)
+					System.out.println(" IT IS " + a);
 
-				GameClient.secureBuffer.writeStr(Class3.password);
+				GameClient.secureBuffer.writeStr(NpcFlags.password);
 				GameClient.secureBuffer.doRsa(Class36.RSA_EXP, Class36.RSA_MOD);
 
 				GameClient.loginBuffer.pos = 0;
@@ -161,7 +162,7 @@ public class Class40 {
 				GameClient.loginBuffer.writeInt(86);
 				GameClient.loginBuffer.writeBytes(GameClient.secureBuffer.data, 0, GameClient.secureBuffer.pos * 1736753585);
 				var3 = GameClient.loginBuffer.pos * 1736753585;
-				GameClient.loginBuffer.writeStr(Class3.aString55);
+				GameClient.loginBuffer.writeStr(NpcFlags.aString55);
 				GameClient.loginBuffer.writeByte((GameClient.aBool3081 ? 1 : 0) << 1 | (GameClient.aBool2864 ? 1 : 0));
 				GameClient.loginBuffer.writeShort(Class5.anInt98 * 2104430923);
 				GameClient.loginBuffer.writeShort(Class60.anInt769 * -1064642111);
@@ -191,7 +192,7 @@ public class Class40 {
 				GameClient.loginBuffer.writeInt(Class121.aClass94_Sub1_1553.crc * -212693501);
 				GameClient.loginBuffer.writeInt(CacheableEntry_Sub23_Sub16_Sub1.aClass94_Sub1_2502.crc * -212693501);
 				GameClient.loginBuffer.writeInt(GameClient.aClass94_Sub1_2928.crc * -212693501);
-				if (!Loader.local)
+				if (!Loader.DO_RSA_OR_SMTH)
 					GameClient.loginBuffer.method1887(seed, var3, GameClient.loginBuffer.pos * 1736753585);
 				GameClient.loginBuffer.writeShortSize(GameClient.loginBuffer.pos * 1736753585 - var2);
 				Class98.loginConnection.write(GameClient.loginBuffer.data, 0, GameClient.loginBuffer.pos * 1736753585);
@@ -204,7 +205,8 @@ public class Class40 {
 				GameClient.gameBuffer.setIsaacSeed(seed);
 				GameClient.loginStage = -2119701274;
 			}
-			System.out.println("stage " + GameClient.loginStage * 638704689);
+			if (Loader.DEBUG)
+				System.out.println("stage " + GameClient.loginStage * 638704689);
 
 			if (GameClient.loginStage * 638704689 == 6 && Class98.loginConnection.available() > 0) {
 				int respo = Class98.loginConnection.read();
@@ -231,7 +233,8 @@ public class Class40 {
 					}
 				}
 			}
-			System.out.println("stage " + GameClient.loginStage * 638704689);
+			if (Loader.DEBUG)
+				System.out.println("stage " + GameClient.loginStage * 638704689);
 
 			if (GameClient.loginStage * 638704689 == 7 && Class98.loginConnection.available() > 0) {
 				GameClient.anInt2900 = (Class98.loginConnection.read() + 3) * -1274447284;
@@ -256,7 +259,7 @@ public class Class40 {
 						var2 |= GameClient.gameBuffer.readOpcode() << 16;
 						var2 |= GameClient.gameBuffer.readOpcode() << 8;
 						var2 |= GameClient.gameBuffer.readOpcode();
-						var3 = CacheableEntry_Sub23_Sub19.method2828(Class3.aString55);
+						var3 = CacheableEntry_Sub23_Sub19.method2828(NpcFlags.aString55);
 						if (Class15.aClass35_195.aLinkedHashMap475.size() >= 10 && !Class15.aClass35_195.aLinkedHashMap475.containsKey(Integer.valueOf(var3))) {
 							Iterator var12 = Class15.aClass35_195.aLinkedHashMap475.entrySet().iterator();
 							var12.next();
@@ -268,7 +271,7 @@ public class Class40 {
 					}
 
 					GameClient.playerRights = Class98.loginConnection.read() * 381650523;
-					GameClient.playerRights = 2  * 381650523;
+					GameClient.playerRights = 2 * 381650523;
 					GameClient.unknown = Class98.loginConnection.read() == 1;
 					GameClient.myIndex = Class98.loginConnection.read() * -435565545;
 					GameClient.myIndex = (GameClient.myIndex * -1731449945 << 8) * -435565545;
@@ -427,7 +430,7 @@ public class Class40 {
 						GameClient.aInterfaceDef_3029 = null;
 						GameClient.aBool3006 = false;
 						GameClient.menuActionPtr = 0;
-						GameClient.aClass108_3140.method1345((int[]) null, new int[]{0, 0, 0, 0, 0}, false, -1, (byte) -40);
+						GameClient.aClass108_3140.method1345((int[]) null, new int[] { 0, 0, 0, 0, 0 }, false, -1, (byte) -40);
 
 						for (var1 = 0; var1 < 8; var1++) {
 							GameClient.aStringArray2994[var1] = null;

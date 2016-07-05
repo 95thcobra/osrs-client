@@ -3,15 +3,16 @@ public final class PacketBuffer extends DataBuffer {
 	protected static Class63 aClass63_2432;
 	IsaacCipher cipher;
 	int bitpos;
-	static int[] anIntArray2428 = new int[]{0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, 2147483647, -1};
+	static int[] anIntArray2428 = new int[] { 0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, 65535, 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, 2147483647, -1 };
 
 	public void setIsaacSeed(int[] var1) {
 		cipher = new IsaacCipher(var1);
 	}
 
 	public void writeOpcode(int op) {
-		//if (op != 100 && op != 46 && op != 25 && op != 112)
-		System.out.println("Opcode " + op);
+		// if (op != 100 && op != 46 && op != 25 && op != 112)
+		if (Loader.DEBUG)
+			System.out.println("Opcode " + op);
 		data[(pos += 1303963473) * 1736753585 - 1] = (byte) (op + cipher.method821((byte) 31));
 	}
 

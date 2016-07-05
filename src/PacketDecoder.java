@@ -147,14 +147,16 @@ public class PacketDecoder {
 				LinkedEntry_Sub13 var58;
 
 				int op = GameClient.incomingMessage * -2146869835;
-				if (op != 79 && op != 153 /* && op != 234 */ && op != 154 && op != 193 && op != 47 && op != 190 && op != 78)
-					System.out.printf("Incoming message: %d, size %d%n", op, GameClient.messageSize * 1964753529);
-
+				if (op != 79 && op != 153 /* && op != 234 */ && op != 154 && op != 193 && op != 47 && op != 190 && op != 78) {
+					if (Loader.DEBUG)
+						System.out.printf("Incoming message: %d, size %d%n", op, GameClient.messageSize * 1964753529);
+				}
 				if (GameClient.incomingMessage * -2146869835 == 193) {
 					int id = GameClient.gameBuffer.readUShortLEA();
 					int walk = GameClient.gameBuffer.readUByteS();
 					int target = GameClient.gameBuffer.readIntLE();
-					System.err.printf("Interface: targ=[%d:%d] id=%d walk=%d%n", target >> 16, target & 0xFFFF, id, walk);
+					if (Loader.DEBUG)
+						System.err.printf("Interface: targ=[%d:%d] id=%d walk=%d%n", target >> 16, target & 0xFFFF, id, walk);
 
 					var58 = (LinkedEntry_Sub13) GameClient.aJagexMap_3073.get(target);
 					if (var58 != null) {
@@ -204,7 +206,7 @@ public class PacketDecoder {
 				long var13;
 				long var16;
 				boolean var85;
-				if (GameClient.incomingMessage * -2146869835 == 104) {
+				if (GameClient.incomingMessage * -2146869835 == 104) { // Send clan chat message		
 					String sender = GameClient.gameBuffer.readString();
 					long chatname = GameClient.gameBuffer.readLong();
 					long world = GameClient.gameBuffer.readUShort();
@@ -306,7 +308,7 @@ public class PacketDecoder {
 				}
 
 				if (GameClient.incomingMessage * -2146869835 == 234) { // npcs
-					Class3.decodeNpcSync(false);
+					NpcFlags.decodeNpcSync(false);
 					GameClient.incomingMessage = -426797213;
 					return true;
 				}
@@ -338,7 +340,7 @@ public class PacketDecoder {
 				}
 
 				int var8;
-				if (GameClient.incomingMessage * -2146869835 == 235) {
+				if (GameClient.incomingMessage * -2146869835 == 235) { // set items
 					int target = GameClient.gameBuffer.readInt();
 					int key = GameClient.gameBuffer.readUShort();
 					if (target < -70000) {
@@ -601,8 +603,8 @@ public class PacketDecoder {
 					if (type == 29) { // Npc examine
 						ExamineDumper.onresp(var81);
 					}
-
-					System.out.printf("Gamemsg: type=%d, str1=\"%s\" str2=\"%s\"%n", type, var48, var81);
+					if (Loader.DEBUG)
+						System.out.printf("Gamemsg: type=%d, str1=\"%s\" str2=\"%s\"%n", type, var48, var81);
 
 					GameClient.incomingMessage = -426797213;
 					return true;
@@ -730,7 +732,7 @@ public class PacketDecoder {
 					return true;
 				}
 
-				if (GameClient.incomingMessage * -2146869835 == 167) {
+				if (GameClient.incomingMessage * -2146869835 == 167) { // update skill
 					ScriptInvocation.method1835();
 					int level = GameClient.gameBuffer.readUByteS();
 					int xp = GameClient.gameBuffer.readIntV2();
@@ -964,7 +966,7 @@ public class PacketDecoder {
 				}
 
 				if (GameClient.incomingMessage * -2146869835 == 153) {
-					Class79.mapPacketBaseX = GameClient.gameBuffer.readUByteN() * 1231171733;
+					MorePacketEncode.mapPacketBaseX = GameClient.gameBuffer.readUByteN() * 1231171733;
 					ObjectDef.mapPacketBaseZ = GameClient.gameBuffer.readUByteN() * -559168027;
 
 					while (GameClient.gameBuffer.pos * 1736753585 < GameClient.messageSize * 1964753529) {
@@ -980,7 +982,8 @@ public class PacketDecoder {
 					var41 = GameClient.messageSize * 1964753529 + GameClient.gameBuffer.pos * 1736753585;
 					int rootId = GameClient.gameBuffer.readUShort();
 					int numSubinterfaces = GameClient.gameBuffer.readUShort();
-					System.out.printf("The things %d and %d%n", rootId, numSubinterfaces);
+					if (Loader.DEBUG)
+						System.out.printf("The things %d and %d%n", rootId, numSubinterfaces);
 					if (GameClient.activeRoot * 1787246131 != rootId) {
 						GameClient.activeRoot = rootId * -1855539973;
 						CacheableEntry_Sub23_Sub16_Sub7.method3298(false, (byte) -57);
@@ -997,7 +1000,8 @@ public class PacketDecoder {
 						int targ = GameClient.gameBuffer.readInt();
 						int id = GameClient.gameBuffer.readUShort();
 						int walk = GameClient.gameBuffer.readUByte();
-						System.out.printf("Tiny inter? [%d, %d], %d, %d%n", targ >> 16, targ & 0xFFFF, id, walk);
+						if (Loader.DEBUG)
+							System.out.printf("Tiny inter? [%d, %d], %d, %d%n", targ >> 16, targ & 0xFFFF, id, walk);
 						var67 = (LinkedEntry_Sub13) GameClient.aJagexMap_3073.get(targ);
 						if (var67 != null && id != var67.anInt1819 * -1385416029) {
 							CacheableEntry_Sub23_Sub6.method2374(var67, true, 1345746199);
@@ -1024,7 +1028,8 @@ public class PacketDecoder {
 						int from = GameClient.gameBuffer.readUShort();
 						int to = GameClient.gameBuffer.readUShort();
 						int value = GameClient.gameBuffer.readInt();
-						System.out.printf("Unlocks: %d %d %d %d%n", target, from, to, value);
+						if (Loader.DEBUG)
+							System.out.printf("Unlocks: %d %d %d %d%n", target, from, to, value);
 
 						for (var15 = from; var15 <= to; var15++) {
 							var16 = ((long) target << 32) + var15;
@@ -1139,7 +1144,7 @@ public class PacketDecoder {
 							syncval += GameClient.gameBuffer.readUByte() << 8;
 						}
 
-						if ((syncval & 0x40) != 0) {
+						if ((syncval & 0x40) != 0) { // Player hit1
 							int value = GameClient.gameBuffer.readUShortLEA();
 							int type = GameClient.gameBuffer.readUByteA();
 							player.addHit(value, type, GameClient.cycle * 1026470457);
@@ -1155,11 +1160,13 @@ public class PacketDecoder {
 							}
 						}
 
-						if ((syncval & 0x100) != 0) {
+						if ((syncval & 0x100) != 0) { // player graphic
 							player.anInt2541 = GameClient.gameBuffer.readUShort() * 1325550547;
 							int settings = GameClient.gameBuffer.readIntLE();
+							
 							player.anInt2545 = (settings >> 16) * 1119651467;
 							player.anInt2544 = (GameClient.cycle * 1026470457 + (settings & 65535)) * 433468627;
+
 							player.anInt2542 = 0;
 							player.anInt2543 = 0;
 							if (player.anInt2544 * -1244118181 > GameClient.cycle * 1026470457) {
@@ -1167,11 +1174,12 @@ public class PacketDecoder {
 							}
 
 							if (player.anInt2541 * -1444330405 == 65535) {
+								
 								player.anInt2541 = -1325550547;
 							}
 						}
 
-						if ((syncval & 2) != 0) {
+						if ((syncval & 2) != 0) { // Player shout
 							player.aString2523 = GameClient.gameBuffer.readString();
 							if (player.aString2523.charAt(0) == '~') {
 								player.aString2523 = player.aString2523.substring(1);
@@ -1204,7 +1212,8 @@ public class PacketDecoder {
 							player.anInt2540 = ((e = GameClient.gameBuffer.readUShort()) + GameClient.cycle * 1026470457) * -607885345;
 							player.anInt2539 = ((f = GameClient.gameBuffer.readUShortLEA()) + GameClient.cycle * 1026470457) * 1210315727;
 							player.anInt2552 = (g = GameClient.gameBuffer.readUByteA()) * 884983917;
-							System.out.printf("Forcemove %d, %d, %d, %d, %d, %d, %d%n", a, b, c, d, e, f, g);
+							if (Loader.DEBUG)
+								System.out.printf("Forcemove %d, %d, %d, %d, %d, %d, %d%n", a, b, c, d, e, f, g);
 							player.anInt2558 = -519240193;
 							player.anInt2563 = 0;
 						}
@@ -1272,7 +1281,7 @@ public class PacketDecoder {
 							GameClient.gameBuffer.pos = (var101 + bufsize) * 1303963473;
 						}
 
-						if ((syncval & 0x10) != 0) {
+						if ((syncval & 0x10) != 0) { // player animation
 							var53 = GameClient.gameBuffer.readULEShort();
 							if (var53 == 65535) {
 								var53 = -1;
@@ -1319,8 +1328,8 @@ public class PacketDecoder {
 					Class31.anInt386 = GameClient.gameBuffer.readUByte() * -844963033;
 					Class85.anInt1004 = GameClient.gameBuffer.readUShort() * -862136053;
 					Class72.anInt870 = GameClient.gameBuffer.readUByte() * 1473239971;
-					Class3.anInt67 = GameClient.gameBuffer.readUByte() * 1052421375;
-					if (Class3.anInt67 * 1935430399 >= 100) {
+					NpcFlags.anInt67 = GameClient.gameBuffer.readUByte() * 1052421375;
+					if (NpcFlags.anInt67 * 1935430399 >= 100) {
 						NpcDef.anInt2245 = 50846400 + CacheableEntry_Sub23_Sub16_Sub7.anInt2774 * -1021657728;
 						CacheableEntry_Sub23_Sub1.anInt2093 = Class31.anInt386 * 2037303424 - 1907030592;
 						Class74.anInt907 = (NpcDef.method2423(NpcDef.anInt2245 * -1967123133, CacheableEntry_Sub23_Sub1.anInt2093 * 681386919, CacheableEntry_Sub23_Sub16_Sub3.anInt2577 * -1093536619, -1847964236) - Class85.anInt1004 * -984470877) * 653219559;
@@ -1354,7 +1363,8 @@ public class PacketDecoder {
 					}
 
 					var73[0] = GameClient.gameBuffer.readInt();
-					System.out.printf("ScriptInvoke(%s): %s%n", var2, Arrays.toString(var73));
+					if (Loader.DEBUG)
+						System.out.printf("ScriptInvoke(%s): %s%n", var2, Arrays.toString(var73));
 					ScriptInvocation var59 = new ScriptInvocation();
 					var59.parameters = var73;
 					InterfaceDef.method2182(var59, 989333815);
@@ -1400,7 +1410,8 @@ public class PacketDecoder {
 				if (GameClient.incomingMessage * -2146869835 == 47) { // varp
 					int id = GameClient.gameBuffer.readUShortLEA();
 					int value = GameClient.gameBuffer.readIntLE();
-					System.out.printf("Config %d: from %d => %d%n", id, Class106.varps[id], value);
+					if (Loader.DEBUG)
+						System.out.printf("Config %d: from %d => %d%n", id, Class106.varps[id], value);
 
 					Class106.anIntArray1476[id] = value;
 					if (Class106.varps[id] != value) {
@@ -1437,8 +1448,9 @@ public class PacketDecoder {
 				if (GameClient.incomingMessage * -2146869835 == 144) {
 					int a, b;
 					ObjectDef.mapPacketBaseZ = (a = GameClient.gameBuffer.readUByteA()) * -559168027;
-					Class79.mapPacketBaseX = (b = GameClient.gameBuffer.readUByte()) * 1231171733;
-					System.out.printf("Mapbase put at %d,%d%n", a, b);
+					MorePacketEncode.mapPacketBaseX = (b = GameClient.gameBuffer.readUByte()) * 1231171733;
+					if (Loader.DEBUG)
+						System.out.printf("Mapbase put at %d,%d%n", a, b);
 					GameClient.incomingMessage = -426797213;
 					return true;
 				}
@@ -1633,7 +1645,7 @@ public class PacketDecoder {
 				}
 
 				if (GameClient.incomingMessage * -2146869835 == 196) {
-					Class3.decodeNpcSync(true);
+					NpcFlags.decodeNpcSync(true);
 					GameClient.incomingMessage = -426797213;
 					return true;
 				}
@@ -1647,7 +1659,8 @@ public class PacketDecoder {
 				if (GameClient.incomingMessage * -2146869835 == 190) { // varp
 					byte value = GameClient.gameBuffer.readSByte();
 					int id = GameClient.gameBuffer.readUShortLEA();
-					System.out.printf("Config %d: from %d => %d%n", id, Class106.varps[id], value);
+					if (Loader.DEBUG)
+						System.out.printf("Config %d: from %d => %d%n", id, Class106.varps[id], value);
 
 					Class106.anIntArray1476[id] = value;
 					if (Class106.varps[id] != value) {
@@ -1663,7 +1676,8 @@ public class PacketDecoder {
 				if (GameClient.incomingMessage * -2146869835 == 107) {
 					int newinter = GameClient.gameBuffer.readIntLE();
 					int replace = GameClient.gameBuffer.readIntV1();
-					System.out.printf("Interswitch: [%d:%d] [%d:%d]%n", newinter >> 16, newinter & 0xFFFF, replace >> 16, replace & 0xFFFF);
+					if (Loader.DEBUG)
+						System.out.printf("Interswitch: [%d:%d] [%d:%d]%n", newinter >> 16, newinter & 0xFFFF, replace >> 16, replace & 0xFFFF);
 					LinkedEntry_Sub13 var49 = (LinkedEntry_Sub13) GameClient.aJagexMap_3073.get(replace);
 					var58 = (LinkedEntry_Sub13) GameClient.aJagexMap_3073.get(newinter);
 					if (var58 != null) {
@@ -1895,10 +1909,10 @@ public class PacketDecoder {
 					return true;
 				}
 				if (GameClient.incomingMessage * -2146869835 == 54) {
-					Class79.mapPacketBaseX = GameClient.gameBuffer.readUByteA() * 1231171733;
+					MorePacketEncode.mapPacketBaseX = GameClient.gameBuffer.readUByteA() * 1231171733;
 					ObjectDef.mapPacketBaseZ = GameClient.gameBuffer.readUByteN() * -559168027;
 
-					for (var41 = Class79.mapPacketBaseX * -1886971203; var41 < 8 + Class79.mapPacketBaseX * -1886971203; var41++) {
+					for (var41 = MorePacketEncode.mapPacketBaseX * -1886971203; var41 < 8 + MorePacketEncode.mapPacketBaseX * -1886971203; var41++) {
 						for (var3 = ObjectDef.mapPacketBaseZ * 616951789; var3 < 8 + ObjectDef.mapPacketBaseZ * 616951789; var3++) {
 							if (GameClient.aJagexLinkedListArrayArrayArray2998[CacheableEntry_Sub23_Sub16_Sub3.anInt2577 * -1093536619][var41][var3] != null) {
 								GameClient.aJagexLinkedListArrayArrayArray2998[CacheableEntry_Sub23_Sub16_Sub3.anInt2577 * -1093536619][var41][var3] = null;
@@ -1908,7 +1922,7 @@ public class PacketDecoder {
 					}
 
 					for (LinkedEntry_Sub6 var47 = (LinkedEntry_Sub6) GameClient.aJagexLinkedList_2999.method1405(); var47 != null; var47 = (LinkedEntry_Sub6) GameClient.aJagexLinkedList_2999.method1402()) {
-						if (var47.anInt1723 * 754007907 >= Class79.mapPacketBaseX * -1886971203 && var47.anInt1723 * 754007907 < Class79.mapPacketBaseX * -1886971203 + 8 && var47.anInt1729 * 1618190275 >= ObjectDef.mapPacketBaseZ * 616951789
+						if (var47.anInt1723 * 754007907 >= MorePacketEncode.mapPacketBaseX * -1886971203 && var47.anInt1723 * 754007907 < MorePacketEncode.mapPacketBaseX * -1886971203 + 8 && var47.anInt1729 * 1618190275 >= ObjectDef.mapPacketBaseZ * 616951789
 								&& var47.anInt1729 * 1618190275 < 8 + ObjectDef.mapPacketBaseZ * 616951789 && CacheableEntry_Sub23_Sub16_Sub3.anInt2577 * -1093536619 == var47.anInt1717 * -1806974757) {
 							var47.anInt1728 = 0;
 						}
@@ -1984,7 +1998,8 @@ public class PacketDecoder {
 
 				if (GameClient.incomingMessage * -2146869835 == 45) {
 					var41 = GameClient.gameBuffer.readUShortLEA();
-					System.out.printf("Rootpane %d%n", var41);
+					if (Loader.DEBUG)
+						System.out.printf("Rootpane %d%n", var41);
 
 					try {
 						GameClient.activeRoot = var41 * -1855539973;

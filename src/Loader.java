@@ -19,19 +19,30 @@ public class Loader implements AppletStub {
 	/**
 	 * Feel free to figure these as you wish
 	 */
-	// public static final String IP = "localhost";
-	public static final String IP = "77.251.97.234";
+	
+	public static final boolean HOST_LOCAL = false;
+	
+	public static final boolean VARPDEBUG = false;
+	public static final boolean VARBITDEBUG = false;
+	public static final boolean DEBUGINVOKEARRAY = false;
+	public static final boolean DEBUG = true;
+	
+	
+	public static final String IP = HOST_LOCAL ? "0.0.0.0" : "edgeville.ddns.net";
 	public static final int PORT = 43594;
 	public static final int WORLD = 1;
 	public static final int REV = 86;
-	public static final boolean local = true;
-	public static final String SERVER_NAME = "Edgeville [DEVELOPMENT]";
+	public static final boolean DO_RSA_OR_SMTH = true;
+	public static final String SERVER_NAME = "Edgeville";
 
 	/**
 	 * No need to configure anything lower
 	 */
 	public static final String URL = "http://oldschool" + WORLD + ".runescape.com/";
 	public static final String CONFIG = URL + "a=946/jav_config.ws";
+
+
+	
 	public static Loader ctx;
 	public static Properties parameters = new Properties();
 

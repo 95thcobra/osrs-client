@@ -86,8 +86,8 @@ public class Class6 {
 	}
 
 	static void method143(int var0) {
-		Class3.aString55 = Class3.aString55.trim();
-		if (Class3.aString55.length() == 0) {
+		NpcFlags.aString55 = NpcFlags.aString55.trim();
+		if (NpcFlags.aString55.length() == 0) {
 			CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1298, Class90.aString1195, Class90.aString1300);
 		} else {
 			long var1 = Class70.method939(-380924934);
@@ -95,7 +95,7 @@ public class Class6 {
 			if (var1 == 0L) {
 				var3 = 5;
 			} else {
-				String var4 = Class3.aString55;
+				String var4 = NpcFlags.aString55;
 				Random random = new Random();
 				DataBuffer securebuf = new DataBuffer(128);
 				DataBuffer secureBuf = new DataBuffer(128);
@@ -230,7 +230,7 @@ public class Class6 {
 			switch (var3) {
 				case 2:
 					CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1067, Class90.aString1302, Class90.aString1303);
-					Class3.anInt57 = -552582362;
+					NpcFlags.anInt57 = -552582362;
 					break;
 				case 3:
 					CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1304, Class90.aString1305, Class90.aString1306);

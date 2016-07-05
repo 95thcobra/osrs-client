@@ -89,7 +89,6 @@
 /Class29.class
 /Class2_Sub1.class
 /Class2_Sub2.class
-/Class3.class
 /Class30.class
 /Class31.class
 /Class32.class
@@ -149,9 +148,6 @@
 /Class7_Sub1.class
 /Class7_Sub2.class
 /Class8.class
-/META-INF/
-/params.txt
-/ticketsystem.form
 /Class80.class
 /Class82.class
 /Class83.class
@@ -218,6 +214,7 @@
 /MachineInfo.class
 /Npc.class
 /NpcDef.class
+/NpcFlags.class
 /ObjectDef.class
 /PacketBuffer.class
 /PacketDecoder.class
@@ -227,3 +224,4 @@
 /RuntimeException_Sub1.class
 /ScriptInvocation.class
 /ticketsystem.class
+/MorePacketEncode.class

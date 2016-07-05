@@ -102,42 +102,42 @@ public final class Npc extends CacheableEntry_Sub23_Sub16_Sub2 {
 		int var3 = Class31.anInt386 * 1395542912 + 64;
 		int var4 = NpcDef.method2423(var1, var3, CacheableEntry_Sub23_Sub16_Sub3.anInt2577 * -1093536619, -1847964236) - Class85.anInt1004 * -984470877;
 		if (NpcDef.anInt2245 * -1967123133 < var1) {
-			NpcDef.anInt2245 += (Class72.anInt870 * 1505832971 + (var1 - NpcDef.anInt2245 * -1967123133) * Class3.anInt67 * 1935430399 / 1000) * 1074536299;
+			NpcDef.anInt2245 += (Class72.anInt870 * 1505832971 + (var1 - NpcDef.anInt2245 * -1967123133) * NpcFlags.anInt67 * 1935430399 / 1000) * 1074536299;
 			if (NpcDef.anInt2245 * -1967123133 > var1) {
 				NpcDef.anInt2245 = var1 * 1074536299;
 			}
 		}
 
 		if (NpcDef.anInt2245 * -1967123133 > var1) {
-			NpcDef.anInt2245 -= (Class3.anInt67 * 1935430399 * (NpcDef.anInt2245 * -1967123133 - var1) / 1000 + Class72.anInt870 * 1505832971) * 1074536299;
+			NpcDef.anInt2245 -= (NpcFlags.anInt67 * 1935430399 * (NpcDef.anInt2245 * -1967123133 - var1) / 1000 + Class72.anInt870 * 1505832971) * 1074536299;
 			if (NpcDef.anInt2245 * -1967123133 < var1) {
 				NpcDef.anInt2245 = var1 * 1074536299;
 			}
 		}
 
 		if (Class74.anInt907 * 113597655 < var4) {
-			Class74.anInt907 += (Class72.anInt870 * 1505832971 + Class3.anInt67 * 1935430399 * (var4 - Class74.anInt907 * 113597655) / 1000) * 653219559;
+			Class74.anInt907 += (Class72.anInt870 * 1505832971 + NpcFlags.anInt67 * 1935430399 * (var4 - Class74.anInt907 * 113597655) / 1000) * 653219559;
 			if (Class74.anInt907 * 113597655 > var4) {
 				Class74.anInt907 = var4 * 653219559;
 			}
 		}
 
 		if (Class74.anInt907 * 113597655 > var4) {
-			Class74.anInt907 -= ((Class74.anInt907 * 113597655 - var4) * Class3.anInt67 * 1935430399 / 1000 + Class72.anInt870 * 1505832971) * 653219559;
+			Class74.anInt907 -= ((Class74.anInt907 * 113597655 - var4) * NpcFlags.anInt67 * 1935430399 / 1000 + Class72.anInt870 * 1505832971) * 653219559;
 			if (Class74.anInt907 * 113597655 < var4) {
 				Class74.anInt907 = var4 * 653219559;
 			}
 		}
 
 		if (CacheableEntry_Sub23_Sub1.anInt2093 * 681386919 < var3) {
-			CacheableEntry_Sub23_Sub1.anInt2093 += (Class72.anInt870 * 1505832971 + Class3.anInt67 * 1935430399 * (var3 - CacheableEntry_Sub23_Sub1.anInt2093 * 681386919) / 1000) * -1774627817;
+			CacheableEntry_Sub23_Sub1.anInt2093 += (Class72.anInt870 * 1505832971 + NpcFlags.anInt67 * 1935430399 * (var3 - CacheableEntry_Sub23_Sub1.anInt2093 * 681386919) / 1000) * -1774627817;
 			if (CacheableEntry_Sub23_Sub1.anInt2093 * 681386919 > var3) {
 				CacheableEntry_Sub23_Sub1.anInt2093 = var3 * -1774627817;
 			}
 		}
 
 		if (CacheableEntry_Sub23_Sub1.anInt2093 * 681386919 > var3) {
-			CacheableEntry_Sub23_Sub1.anInt2093 -= (Class72.anInt870 * 1505832971 + (CacheableEntry_Sub23_Sub1.anInt2093 * 681386919 - var3) * Class3.anInt67 * 1935430399 / 1000) * -1774627817;
+			CacheableEntry_Sub23_Sub1.anInt2093 -= (Class72.anInt870 * 1505832971 + (CacheableEntry_Sub23_Sub1.anInt2093 * 681386919 - var3) * NpcFlags.anInt67 * 1935430399 / 1000) * -1774627817;
 			if (CacheableEntry_Sub23_Sub1.anInt2093 * 681386919 < var3) {
 				CacheableEntry_Sub23_Sub1.anInt2093 = var3 * -1774627817;
 			}
