@@ -23,7 +23,7 @@ public class Loader implements AppletStub {
 	public static final boolean HOST_LOCAL = false;
 	
 	public static final boolean VARPDEBUG = false;
-	public static final boolean VARBITDEBUG = false;
+	public static final boolean VARBITDEBUG = true;
 	public static final boolean DEBUGINVOKEARRAY = false;
 	public static final boolean DEBUG = true;
 	

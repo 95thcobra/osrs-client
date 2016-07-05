@@ -482,11 +482,6 @@ public final class PacketEncoder {
 						GameClient.secureBuffer.writeIntV1(Class63.anInt799 * -464823961);
 						GameClient.secureBuffer.writeByte(Class65.aBoolArray820[82] ? 1 : 0);
 						GameClient.secureBuffer.writeShortA(var3);
-
-						System.out.println("SPELLONNPC1:" + GameClient.anInt2881 * -1911127929);
-						System.out.println("SPELLONNPC2:" + Class63.anInt799 * -464823961);
-						System.out.println("SPELLONNPC3:" + Class63.anInt799 * -464823961);
-						System.out.println("SPELLONNPC4:" + var3);
 					}
 				}
 
@@ -676,11 +671,6 @@ public final class PacketEncoder {
 						GameClient.secureBuffer.writeShortLE(var3);
 						GameClient.secureBuffer.writeIntV1(Class63.anInt799 * -464823961);
 						GameClient.secureBuffer.writeByte(Class65.aBoolArray820[82] ? 1 : 0);
-
-						System.out.println("SPELL ON PLAYER 1:" + GameClient.anInt2881 * -1911127929);
-						System.out.println("SPELL ON PLAYER 2:" + var3);
-						System.out.println("SPELL ON PLAYER 3:" + Class63.anInt799 * -464823961);
-						System.out.println("SPELL ON PLAYER 4:" + (Class65.aBoolArray820[82] ? 1 : 0));
 					}
 				}
 
