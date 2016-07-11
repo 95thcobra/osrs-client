@@ -64,6 +64,7 @@ public class Class50 {
 	public static InterfaceDef method713(int var0, byte var1) {
 		int var2 = var0 >> 16;
 		int var3 = var0 & 65535;
+
 		if (InterfaceDef.aInterfaceDefArrayArray1975[var2] == null || InterfaceDef.aInterfaceDefArrayArray1975[var2][var3] == null) {
 			boolean var4 = ItemContainer.method1840(var2);
 			if (!var4) {

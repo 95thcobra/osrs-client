@@ -231,6 +231,7 @@ public class Class6 {
 				case 2:
 					CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1067, Class90.aString1302, Class90.aString1303);
 					NpcFlags.anInt57 = -552582362;
+					System.out.println("KEKKK");
 					break;
 				case 3:
 					CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1304, Class90.aString1305, Class90.aString1306);

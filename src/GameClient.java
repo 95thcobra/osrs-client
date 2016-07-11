@@ -515,10 +515,10 @@ public final class GameClient extends Applet_Sub1 {
 					}
 
 					if (var38 == null) {
-						// var38 = Class83.aString993 + File.separatorChar +
-						// "jagexcache" + var5 + File.separatorChar +
-						// "oldschool" + File.separatorChar + var23 +
-						// File.separatorChar;
+						 //var38 = Class83.aString993 + File.separatorChar +
+						 //"jagexcache" + var5 + File.separatorChar +
+						 //"oldschool" + File.separatorChar + var23 +
+						 //File.separatorChar;
 						var38 = Class83.aString993 + File.separatorChar + ".Edgeville" + var5 + File.separatorChar + "oldschool" + File.separatorChar + var23 + File.separatorChar;
 						var28 = true;
 					}
@@ -1640,11 +1640,14 @@ public final class GameClient extends Applet_Sub1 {
 					}
 
 					short var7;
+					System.out.println("FAK "+NpcFlags.anInt57 * -1261736495);
+
 					if (NpcFlags.anInt57 * -1261736495 == 0) {
 						var11 = NpcFlags.anInt47 * 23501379 + 180 - 80;
 						var7 = 291;
 						if (var4 == 1 && var10 >= var11 - 75 && var10 <= 75 + var11 && var13 >= var7 - 20 && var13 <= 20 + var7) {
-							Class89.method1120(ScriptInvocation.method1836("secure", true) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false, -982469919);
+							//Class89.method1120(ScriptInvocation.method1836("secure", true) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false, -982469919);
+							Class89.method1120(Loader.REGISTER_URL, true, false, -982469919);
 						}
 
 						var11 = 180 + NpcFlags.anInt47 * 23501379 + 80;
@@ -1679,6 +1682,10 @@ public final class GameClient extends Applet_Sub1 {
 					} else if (NpcFlags.anInt57 * -1261736495 != 1) {
 						short var12;
 						if (NpcFlags.anInt57 * -1261736495 == 2) {
+							
+							System.out.println("click hero");
+
+									
 							var12 = 231;
 							var11 = var12 + 30;
 							if (var4 == 1 && var13 >= var11 - 15 && var13 < var11) {
@@ -2103,6 +2110,7 @@ public final class GameClient extends Applet_Sub1 {
 		}
 
 		int var7;
+		
 		if (anInt2868 * -684224463 == 0) {
 			Class31.method413(NpcFlags.anInt66 * 719550867, NpcFlags.aString56, (Color) null, var23, (byte) 79);
 		} else if (anInt2868 * -684224463 == 5) {

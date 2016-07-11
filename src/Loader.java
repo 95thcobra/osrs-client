@@ -41,6 +41,8 @@ public class Loader implements AppletStub {
 	public static final String URL = "http://oldschool" + WORLD + ".runescape.com/";
 	public static final String CONFIG = URL + "a=946/jav_config.ws";
 
+	public static final String REGISTER_URL = "http://edgeville.org/register";
+
 
 	
 	public static Loader ctx;

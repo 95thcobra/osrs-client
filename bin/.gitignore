@@ -102,6 +102,9 @@
 /Class4.class
 /Class40.class
 /Class41.class
+/META-INF/
+/params.txt
+/ticketsystem.form
 /Class42.class
 /Class43.class
 /Class44.class
@@ -144,7 +147,6 @@
 /Class76.class
 /Class77.class
 /Class78.class
-/Class79.class
 /Class7_Sub1.class
 /Class7_Sub2.class
 /Class8.class
@@ -212,6 +214,7 @@
 /Loader$1.class
 /Loader.class
 /MachineInfo.class
+/MorePacketEncode.class
 /Npc.class
 /NpcDef.class
 /NpcFlags.class
@@ -224,4 +227,3 @@
 /RuntimeException_Sub1.class
 /ScriptInvocation.class
 /ticketsystem.class
-/MorePacketEncode.class

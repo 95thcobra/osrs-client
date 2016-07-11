@@ -206,9 +206,11 @@ public abstract class CacheableEntry_Sub23_Sub16_Sub2 extends CacheableEntry_Sub
 		if (NpcFlags.aBool63) {
 			if (var4 == 4) {
 				NpcFlags.anInt57 = 1063267524;
+				System.out.println("HIII");
 			}
 
 		} else {
+			System.out.println("thisssss" + var4);
 			NpcFlags.anInt57 = var4 * -807924943;
 			CacheableEntry_Sub23_Sub14.method2716();
 			byte[] var7 = var1.method1166("title.jpg", "", (byte) 0);

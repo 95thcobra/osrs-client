@@ -50,7 +50,7 @@ public class Class90 {
 	public static String aString1102 = "Please try using a different world.";
 	public static String aString1103 = "";
 	public static String aString1134 = "";
-	public static String aString1105 = "Invalid username/email or password.";
+	public static String aString1105 = "Invalid login, a forum account is required to login.";
 	public static String aString1271 = "";
 	public static String aString1107 = "Your account has been disabled.";
 	public static String aString1108 = "Please check your message-centre for details.";
@@ -233,12 +233,12 @@ public class Class90 {
 	public static String aString1071 = "Login: ";
 	public static String aString1077 = "Password: ";
 	public static String aString1287 = "PIN: ";
-	public static String aString1288 = "Welcome to RuneScape";
-	public static String aString1289 = "New User";
-	public static String aString1327 = "Existing User";
+	public static String aString1288 = "Welcome to Edgeville";
+	public static String aString1289 = "Register";
+	public static String aString1327 = "Login";
 	public static String aString1198 = "Login";
 	public static String aString1245 = "Cancel";
-	public static String aString1293 = "Forgotten your password? <col=ffffff>Click here.";
+	public static String aString1293 = "No account? It takes 1 minute to register! <col=ffffff>Click here.";
 	public static String aString1294 = "Forgotten your password?";
 	public static String aString1299 = "Username/email: ";
 	public static String aString1296 = "Recover";

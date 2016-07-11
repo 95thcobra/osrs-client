@@ -1198,6 +1198,9 @@ public final class PacketEncoder {
 					var0.method3381(Class90.aString1245, var11, var27 + 5, 16777215, 0);
 					var1.method3381(Class90.aString1281, 180 + NpcFlags.anInt47 * 23501379, var27 + 36, 255, 0);
 				} else if (NpcFlags.anInt57 * -1261736495 == 5) {
+
+				//	Class89.method1120(Loader.REGISTER_URL, true, false, -982469919);
+					
 					var0.method3381(Class90.aString1294, 180 + NpcFlags.anInt47 * 23501379, 201, 16776960, 0);
 					var17 = 221;
 					var2.method3381(NpcFlags.aString58, NpcFlags.anInt47 * 23501379 + 180, var17, 16776960, 0);
