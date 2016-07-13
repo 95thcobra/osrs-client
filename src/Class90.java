@@ -213,7 +213,7 @@ public class Class90 {
 	public static String aString1099 = "slide:";
 	public static String aString1081 = "RuneScape is loading - please wait...";
 	public static String aString1267 = "";
-	public static String aString1268 = "Enter your username/email & password.";
+	public static String aString1268 = "Enter your username & password.";
 	public static String aString1269 = "";
 	public static String aString1236 = "Warning!";
 	public static String aString1143 = "This is a <col=ff0000>PvP<col=ffffff> world.";

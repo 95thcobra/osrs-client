@@ -254,7 +254,7 @@ public class Class63_Sub1 extends Class63 {
 			}
 
 			if (var2 == 326) {
-				GameClient.secureBuffer.writeOpcode(33);
+				GameClient.secureBuffer.writeOpcode(33); // make over 
 				GameClient.aClass108_3140.method1349(GameClient.secureBuffer, -43444068);
 				return true;
 			} else {
