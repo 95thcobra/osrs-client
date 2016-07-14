@@ -106,7 +106,7 @@ public class Class108 {
 			if (var3 == 0) {
 				var1.writeByte(-1);
 			} else {
-				var1.writeByte(var3 - 256);
+				var1.writeByte(var3 - 256); 
 			}
 		}
 

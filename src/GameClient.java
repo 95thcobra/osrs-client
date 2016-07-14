@@ -1551,28 +1551,28 @@ public final class GameClient extends Applet_Sub1 {
 	}
 
 	static void method3508(Applet_Sub1 var0, int var1) {
-		int var4;
-		int var10;
+		int clicked;
+		int mouseY;
 		int var11;
-		int var13;
+		int mouseX;
 		if (NpcFlags.aBool69) {
 			if (Class74.anInt903 * 332680755 == 1 || !Class46.aBool651 && Class74.anInt903 * 332680755 == 4) {
-				var4 = 280 + NpcFlags.anInt42 * -468945023;
-				if (Class74.anInt891 * 1837550337 >= var4 && Class74.anInt891 * 1837550337 <= 14 + var4 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
+				clicked = 280 + NpcFlags.anInt42 * -468945023;
+				if (Class74.anInt891 * 1837550337 >= clicked && Class74.anInt891 * 1837550337 <= 14 + clicked && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
 					Class49.method708(0, 0, 1882649131);
-				} else if (Class74.anInt891 * 1837550337 >= var4 + 15 && Class74.anInt891 * 1837550337 <= 80 + var4 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
+				} else if (Class74.anInt891 * 1837550337 >= clicked + 15 && Class74.anInt891 * 1837550337 <= 80 + clicked && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
 					Class49.method708(0, 1, -1895665187);
 				} else {
-					var10 = 390 + NpcFlags.anInt42 * -468945023;
-					if (Class74.anInt891 * 1837550337 >= var10 && Class74.anInt891 * 1837550337 <= var10 + 14 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
+					mouseY = 390 + NpcFlags.anInt42 * -468945023;
+					if (Class74.anInt891 * 1837550337 >= mouseY && Class74.anInt891 * 1837550337 <= mouseY + 14 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
 						Class49.method708(1, 0, 1119413582);
-					} else if (Class74.anInt891 * 1837550337 >= 15 + var10 && Class74.anInt891 * 1837550337 <= 80 + var10 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
+					} else if (Class74.anInt891 * 1837550337 >= 15 + mouseY && Class74.anInt891 * 1837550337 <= 80 + mouseY && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
 						Class49.method708(1, 1, 543514357);
 					} else {
-						var13 = 500 + NpcFlags.anInt42 * -468945023;
-						if (Class74.anInt891 * 1837550337 >= var13 && Class74.anInt891 * 1837550337 <= var13 + 14 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
+						mouseX = 500 + NpcFlags.anInt42 * -468945023;
+						if (Class74.anInt891 * 1837550337 >= mouseX && Class74.anInt891 * 1837550337 <= mouseX + 14 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
 							Class49.method708(2, 0, -1178019331);
-						} else if (Class74.anInt891 * 1837550337 >= 15 + var13 && Class74.anInt891 * 1837550337 <= var13 + 80 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
+						} else if (Class74.anInt891 * 1837550337 >= 15 + mouseX && Class74.anInt891 * 1837550337 <= mouseX + 80 && Class74.anInt905 * -1013575437 >= 4 && Class74.anInt905 * -1013575437 <= 18) {
 							Class49.method708(2, 1, -420624681);
 						} else {
 							var11 = 610 + NpcFlags.anInt42 * -468945023;
@@ -1614,11 +1614,11 @@ public final class GameClient extends Applet_Sub1 {
 				if (anInt2868 * -684224463 == 10 || anInt2868 * -684224463 == 11) {
 					if (anInt2865 * 1017874057 == 0) {
 						if (Class74.anInt903 * 332680755 == 1 || !Class46.aBool651 && Class74.anInt903 * 332680755 == 4) {
-							var4 = 5 + NpcFlags.anInt42 * -468945023;
+							clicked = 5 + NpcFlags.anInt42 * -468945023;
 							short var2 = 463;
 							byte var5 = 100;
 							byte var3 = 35;
-							if (Class74.anInt891 * 1837550337 >= var4 && Class74.anInt891 * 1837550337 <= var5 + var4 && Class74.anInt905 * -1013575437 >= var2 && Class74.anInt905 * -1013575437 <= var3 + var2) {
+							if (Class74.anInt891 * 1837550337 >= clicked && Class74.anInt891 * 1837550337 <= var5 + clicked && Class74.anInt905 * -1013575437 >= var2 && Class74.anInt905 * -1013575437 <= var3 + var2) {
 								if (Class61.method816((byte) -65)) {
 									NpcFlags.aBool69 = true;
 								}
@@ -1632,26 +1632,28 @@ public final class GameClient extends Applet_Sub1 {
 						}
 					}
 
-					var4 = Class74.anInt903 * 332680755;
-					var10 = Class74.anInt891 * 1837550337;
-					var13 = Class74.anInt905 * -1013575437;
-					if (!Class46.aBool651 && var4 == 4) {
-						var4 = 1;
+					clicked = Class74.anInt903 * 332680755;
+					mouseY = Class74.anInt891 * 1837550337;
+					mouseX = Class74.anInt905 * -1013575437;
+					if (!Class46.aBool651 && clicked == 4) {
+						clicked = 1;
 					}
 
 					short var7;
-					System.out.println("FAK "+NpcFlags.anInt57 * -1261736495);
+					//System.out.println("Current screen "+NpcFlags.anInt57 * -1261736495);
 
 					if (NpcFlags.anInt57 * -1261736495 == 0) {
 						var11 = NpcFlags.anInt47 * 23501379 + 180 - 80;
 						var7 = 291;
-						if (var4 == 1 && var10 >= var11 - 75 && var10 <= 75 + var11 && var13 >= var7 - 20 && var13 <= 20 + var7) {
+						
+						// Register button
+						if (clicked == 1 && mouseY >= var11 - 75 && mouseY <= 75 + var11 && mouseX >= var7 - 20 && mouseX <= 20 + var7) {
 							//Class89.method1120(ScriptInvocation.method1836("secure", true) + "m=account-creation/g=oldscape/create_account_funnel.ws", true, false, -982469919);
 							Class89.method1120(Loader.REGISTER_URL, true, false, -982469919);
 						}
 
 						var11 = 180 + NpcFlags.anInt47 * 23501379 + 80;
-						if (var4 == 1 && var10 >= var11 - 75 && var10 <= var11 + 75 && var13 >= var7 - 20 && var13 <= 20 + var7) {
+						if (clicked == 1 && mouseY >= var11 - 75 && mouseY <= var11 + 75 && mouseX >= var7 - 20 && mouseX <= 20 + var7) {
 							if ((anInt2860 * -456057453 & 4) != 0) {
 								if ((anInt2860 * -456057453 & 1024) != 0) {
 									NpcFlags.aString58 = Class90.aString1277;
@@ -1682,32 +1684,37 @@ public final class GameClient extends Applet_Sub1 {
 					} else if (NpcFlags.anInt57 * -1261736495 != 1) {
 						short var12;
 						if (NpcFlags.anInt57 * -1261736495 == 2) {
-							
-							System.out.println("click hero");
-
-									
 							var12 = 231;
 							var11 = var12 + 30;
-							if (var4 == 1 && var13 >= var11 - 15 && var13 < var11) {
+							
+							//System.out.printf("mouseX:%d, mouseY:%d\n", mouseX,mouseY);			
+							
+							if (clicked == 1 && mouseX >= var11 - 15 && mouseX < var11) {
 								NpcFlags.anInt65 = 0;
 							}
 
 							var11 += 15;
-							if (var4 == 1 && var13 >= var11 - 15 && var13 < var11) {
+							if (clicked == 1 && mouseX >= var11 - 15 && mouseX < var11) {
 								NpcFlags.anInt65 = 510740173;
 							}
 
 							var11 += 15;
 							var12 = 361;
-							if (var4 == 1 && var13 >= var12 - 15 && var13 < var12) {
-								CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1298, Class90.aString1195, Class90.aString1300);
-								NpcFlags.anInt57 = 255342581;
+							if (clicked == 1 && mouseX >= var12 - 15 && mouseX < var12) {
+								
+								// Two lines below are forgot password button, we dont need that anymore
+								//CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1298, Class90.aString1195, Class90.aString1300);
+								//NpcFlags.anInt57 = 255342581;
+								
+								// No account yet? Register button
+								Class89.method1120(Loader.REGISTER_URL, true, false, -982469919);
+
 								return;
 							}
-
+							
 							int var15 = 180 + NpcFlags.anInt47 * 23501379 - 80;
 							short var8 = 321;
-							if (var4 == 1 && var10 >= var15 - 75 && var10 <= 75 + var15 && var13 >= var8 - 20 && var13 <= 20 + var8) {
+							if (clicked == 1 && mouseY >= var15 - 75 && mouseY <= 75 + var15 && mouseX >= var8 - 20 && mouseX <= 20 + var8) {
 								NpcFlags.aString55 = NpcFlags.aString55.trim();
 								if (NpcFlags.aString55.length() == 0) {
 									CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1173, Class90.aString1176, Class90.aString1174);
@@ -1726,7 +1733,7 @@ public final class GameClient extends Applet_Sub1 {
 							}
 
 							var15 = 80 + 180 + NpcFlags.anInt47 * 23501379;
-							if (var4 == 1 && var10 >= var15 - 75 && var10 <= 75 + var15 && var13 >= var8 - 20 && var13 <= 20 + var8) {
+							if (clicked == 1 && mouseY >= var15 - 75 && mouseY <= 75 + var15 && mouseX >= var8 - 20 && mouseX <= 20 + var8) {
 								NpcFlags.anInt57 = 0;
 								NpcFlags.aString55 = "";
 								NpcFlags.password = "";
@@ -1806,7 +1813,7 @@ public final class GameClient extends Applet_Sub1 {
 							if (NpcFlags.anInt57 * -1261736495 == 4) {
 								var11 = NpcFlags.anInt47 * 23501379 + 180 - 80;
 								var7 = 321;
-								if (var4 == 1 && var10 >= var11 - 75 && var10 <= 75 + var11 && var13 >= var7 - 20 && var13 <= 20 + var7) {
+								if (clicked == 1 && mouseY >= var11 - 75 && mouseY <= 75 + var11 && mouseX >= var7 - 20 && mouseX <= 20 + var7) {
 									Class126_Sub1.aString1646.trim();
 									if (Class126_Sub1.aString1646.length() != 6) {
 										CacheableEntry_Sub23_Sub6.setLoginMessages(Class90.aString1191, Class90.aString1090, Class90.aString1237);
@@ -1821,16 +1828,16 @@ public final class GameClient extends Applet_Sub1 {
 									return;
 								}
 
-								if (var4 == 1 && var10 >= NpcFlags.anInt47 * 23501379 + 180 - 9 && var10 <= 180 + NpcFlags.anInt47 * 23501379 + 130 && var13 >= 263 && var13 <= 296) {
+								if (clicked == 1 && mouseY >= NpcFlags.anInt47 * 23501379 + 180 - 9 && mouseY <= 180 + NpcFlags.anInt47 * 23501379 + 130 && mouseX >= 263 && mouseX <= 296) {
 									NpcFlags.aBool75 = !NpcFlags.aBool75;
 								}
 
-								if (var4 == 1 && var10 >= NpcFlags.anInt47 * 23501379 + 180 - 34 && var10 <= 180 + NpcFlags.anInt47 * 23501379 + 34 && var13 >= 351 && var13 <= 363) {
+								if (clicked == 1 && mouseY >= NpcFlags.anInt47 * 23501379 + 180 - 34 && mouseY <= 180 + NpcFlags.anInt47 * 23501379 + 34 && mouseX >= 351 && mouseX <= 363) {
 									Class89.method1120(ScriptInvocation.method1836("secure", true) + "m=totp-authenticator/disableTOTPRequest", true, false, -982469919);
 								}
 
 								var11 = NpcFlags.anInt47 * 23501379 + 180 + 80;
-								if (var4 == 1 && var10 >= var11 - 75 && var10 <= 75 + var11 && var13 >= var7 - 20 && var13 <= 20 + var7) {
+								if (clicked == 1 && mouseY >= var11 - 75 && mouseY <= 75 + var11 && mouseX >= var7 - 20 && mouseX <= 20 + var7) {
 									NpcFlags.anInt57 = 0;
 									NpcFlags.aString55 = "";
 									NpcFlags.password = "";
@@ -1882,13 +1889,13 @@ public final class GameClient extends Applet_Sub1 {
 							} else if (NpcFlags.anInt57 * -1261736495 == 5) {
 								var11 = 180 + NpcFlags.anInt47 * 23501379 - 80;
 								var7 = 321;
-								if (var4 == 1 && var10 >= var11 - 75 && var10 <= var11 + 75 && var13 >= var7 - 20 && var13 <= 20 + var7) {
+								if (clicked == 1 && mouseY >= var11 - 75 && mouseY <= var11 + 75 && mouseX >= var7 - 20 && mouseX <= 20 + var7) {
 									Class6.method143(2115531962);
 									return;
 								}
 
 								var11 = 80 + NpcFlags.anInt47 * 23501379 + 180;
-								if (var4 == 1 && var10 >= var11 - 75 && var10 <= 75 + var11 && var13 >= var7 - 20 && var13 <= var7 + 20) {
+								if (clicked == 1 && mouseY >= var11 - 75 && mouseY <= 75 + var11 && mouseX >= var7 - 20 && mouseX <= var7 + 20) {
 									NpcFlags.aString58 = Class90.aString1267;
 									NpcFlags.aString59 = Class90.aString1268;
 									NpcFlags.aString60 = Class90.aString1269;
@@ -1934,7 +1941,7 @@ public final class GameClient extends Applet_Sub1 {
 									do {
 										if (!Class6.method153((byte) 0)) {
 											var12 = 321;
-											if (var4 == 1 && var13 >= var12 - 20 && var13 <= 20 + var12) {
+											if (clicked == 1 && mouseX >= var12 - 20 && mouseX <= 20 + var12) {
 												NpcFlags.aString58 = Class90.aString1267;
 												NpcFlags.aString59 = Class90.aString1268;
 												NpcFlags.aString60 = Class90.aString1269;
@@ -1971,7 +1978,7 @@ public final class GameClient extends Applet_Sub1 {
 
 						var11 = NpcFlags.anInt47 * 23501379 + 180 - 80;
 						var7 = 321;
-						if (var4 == 1 && var10 >= var11 - 75 && var10 <= 75 + var11 && var13 >= var7 - 20 && var13 <= 20 + var7) {
+						if (clicked == 1 && mouseY >= var11 - 75 && mouseY <= 75 + var11 && mouseX >= var7 - 20 && mouseX <= 20 + var7) {
 							NpcFlags.aString58 = Class90.aString1267;
 							NpcFlags.aString59 = Class90.aString1268;
 							NpcFlags.aString60 = Class90.aString1269;
@@ -1980,7 +1987,7 @@ public final class GameClient extends Applet_Sub1 {
 						}
 
 						var11 = 80 + 180 + NpcFlags.anInt47 * 23501379;
-						if (var4 == 1 && var10 >= var11 - 75 && var10 <= 75 + var11 && var13 >= var7 - 20 && var13 <= var7 + 20) {
+						if (clicked == 1 && mouseY >= var11 - 75 && mouseY <= 75 + var11 && mouseX >= var7 - 20 && mouseX <= var7 + 20) {
 							NpcFlags.anInt57 = 0;
 						}
 					}

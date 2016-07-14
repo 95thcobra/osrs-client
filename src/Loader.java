@@ -23,12 +23,13 @@ public class Loader implements AppletStub {
 	public static final boolean HOST_LOCAL = false;
 	
 	public static final boolean VARPDEBUG = false;
-	public static final boolean VARBITDEBUG = true;
+	public static final boolean VARBITDEBUG = false;
 	public static final boolean DEBUGINVOKEARRAY = false;
-	public static final boolean DEBUG = true;
+	public static final boolean DEBUG = false;
 	
 	
 	public static final String IP = HOST_LOCAL ? "0.0.0.0" : "edgeville.ddns.net";
+	//public static final String IP = "51.254.222.10";
 	public static final int PORT = 43594;
 	public static final int WORLD = 1;
 	public static final int REV = 86;
@@ -38,8 +39,8 @@ public class Loader implements AppletStub {
 	/**
 	 * No need to configure anything lower
 	 */
-	public static final String URL = "http://oldschool" + WORLD + ".runescape.com/";
-	public static final String CONFIG = URL + "a=946/jav_config.ws";
+	//public static final String URL = "http://oldschool" + WORLD + ".runescape.com/";
+	//public static final String CONFIG = URL + "a=946/jav_config.ws";
 
 	public static final String REGISTER_URL = "http://edgeville.org/register";
 
