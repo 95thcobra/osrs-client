@@ -1,7 +1,7 @@
 -injars 'C:\Users\Corsair\Documents\GitHub\osrs-client\obfuscate\EdgevilleClientIn.jar'
 -outjars 'C:\Users\Corsair\Documents\GitHub\osrs-client\obfuscate\EdgevilleClient.jar'
 
--libraryjars 'C:\Program Files\Java\jre1.8.0_91\lib\rt.jar'
+-libraryjars 'C:\Program Files (x86)\Java\jre1.8.0_91\lib\rt.jar'
 
 -dontskipnonpubliclibraryclassmembers
 -dontshrink

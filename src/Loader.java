@@ -34,7 +34,7 @@ public class Loader implements AppletStub {
 	public static final int WORLD = 1;
 	public static final int REV = 86;
 	public static final boolean DO_RSA_OR_SMTH = true;
-	public static final String SERVER_NAME = "Edgeville";
+	public static final String SERVER_NAME = "Edgeville - No place like home";
 
 	/**
 	 * No need to configure anything lower
