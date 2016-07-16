@@ -110,6 +110,7 @@ public class MorePacketEncode {
 					int var56;
 					String var80;
 					if (opcode < 100) {
+						
 						if (opcode == 0) {
 							Class1.intstack[istackptr++] = var10[var8];
 							continue;
@@ -1419,11 +1420,13 @@ public class MorePacketEncode {
 										continue;
 									}
 
+									// Launch url
 									if (opcode == 3113) {
 										--var7;
 										var52 = Class1.stringstack[var7];
 										--istackptr;
 										var54 = Class1.intstack[istackptr] == 1;
+										
 										Class89.method1120(var52, var54, false, -982469919);
 										continue;
 									}

@@ -1,5 +1,7 @@
+import java.awt.Desktop;
 import java.awt.datatransfer.Clipboard;
 import java.io.IOException;
+import java.net.URI;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -2031,6 +2033,28 @@ public class PacketDecoder {
 					GameClient.incomingMessage = -426797213;
 					return true;
 				}
+				
+				// START CUSTOM
+				
+				System.out.println("YO INCOMING MESSAGE = " + GameClient.incomingMessage * -2146869835);
+				
+				// open forums
+				if (GameClient.incomingMessage * -2146869835 == 200) {
+					Class89.method1120(Loader.FORUMS_LINK, true, false, -982469919);
+					//String url= GameClient.gameBuffer.readString();//dont work
+					GameClient.incomingMessage = -426797213;
+					return true;
+				}
+				
+				// open hiscores
+				if (GameClient.incomingMessage * -2146869835 == 201) {
+					Class89.method1120(Loader.HISCORES_LINK, true, false, -982469919);
+					//String url= GameClient.gameBuffer.readString();//dont work
+					GameClient.incomingMessage = -426797213;
+					return true;
+				}
+				
+				// END CUSTOM
 
 				Class72.method964("" + GameClient.incomingMessage * -2146869835 + Class37.COMMA + GameClient.anInt2913 * -1223323799 + Class37.COMMA + GameClient.anInt2916 * -1483162423 + Class37.COMMA + GameClient.messageSize * 1964753529, (Throwable) null, (byte) 1);
 				Class118.method1490((byte) 122);

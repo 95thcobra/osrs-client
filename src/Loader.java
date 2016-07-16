@@ -25,7 +25,7 @@ public class Loader implements AppletStub {
 	public static final boolean VARPDEBUG = false;
 	public static final boolean VARBITDEBUG = false;
 	public static final boolean DEBUGINVOKEARRAY = false;
-	public static final boolean DEBUG = false;
+	public static final boolean DEBUG = true;
 	
 	
 	public static final String IP = HOST_LOCAL ? "0.0.0.0" : "edgeville.ddns.net";
@@ -43,6 +43,10 @@ public class Loader implements AppletStub {
 	//public static final String CONFIG = URL + "a=946/jav_config.ws";
 
 	public static final String REGISTER_URL = "http://edgeville.org/register";
+
+	public static final String FORUMS_LINK = "http://forum.edgeville.org/";
+
+	public static final String HISCORES_LINK = "http://forum.edgeville.org/index.php?/hiscores/";
 
 
 	
