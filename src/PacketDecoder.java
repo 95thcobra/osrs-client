@@ -2036,7 +2036,7 @@ public class PacketDecoder {
 				
 				// START CUSTOM
 				
-				System.out.println("YO INCOMING MESSAGE = " + GameClient.incomingMessage * -2146869835);
+				//System.out.println("YO INCOMING MESSAGE = " + GameClient.incomingMessage * -2146869835);
 				
 				// open forums
 				if (GameClient.incomingMessage * -2146869835 == 200) {
